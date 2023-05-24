@@ -11,6 +11,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Install Python
+        uses: actions/setup-python@v4
+
       - name: Install Node
         uses: actions/setup-node@v2
         with:
@@ -24,6 +27,10 @@ jobs:
 
       - name: Build
         run: pnpm run build
+
+      - name: Post-Build Setup
+        run: |
+          python patch-hrefs-for-gh-pages.py
 
       - name: Deployment Setup
         run: rm -rf .gitignore
