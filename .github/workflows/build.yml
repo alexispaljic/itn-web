@@ -33,7 +33,9 @@ jobs:
           python patch-hrefs-for-gh-pages.py
 
       - name: Deployment Setup
-        run: rm -rf .gitignore
+        run: |
+          rm -rf .gitignore
+          cd dist && touch .nojekyll
 
       - name: Deployment
         uses: JamesIves/github-pages-deploy-action@3.7.1
