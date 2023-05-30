@@ -1,0 +1,70 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Card from "@components/card.astro";
+
+const cards = [
+  {
+    name: "Equipe de Direction",
+    popular: false,
+    features: [
+      "Une directrice",
+      "Une équipe restreinte",
+      "Création de l'ITN",
+      "...",
+      "Interface avec le DPEV",
+    ],
+    button: {
+      text: "En savoir plus",
+      link: "/",
+    },
+  },
+  {
+    name: "Comité de Pilotage",
+    popular: false,
+    features: [
+      "Organe interne",
+      "16 experts de Mines Paris",
+      "Lien avec départements/EC",
+      "Définition & mise en œuvre",
+      "...",
+    ],
+    button: {
+      text: "En savoir plus",
+      link: "#",
+    },
+  },
+  {
+    name: "Conseil scientifique",
+    popular: false,
+    features: [
+      "Organe externe",
+      "Experts externes & Mécènes",
+      "Rôle consultatif",
+      "...",
+      "...",
+    ],
+    button: {
+      text: "En savoir plus",
+      link: "/contact",
+    },
+  },
+];
+---
+
+<Layout title="Organisation">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Organisation</Fragment>
+      <Fragment slot="desc">
+        Trois instances pour structurer l'effort de Mines Paris – PSL dans le
+        numérique.
+      </Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
+      {cards.map((item) => <Card card={item} />)}
+    </div>
+  </Container>
+</Layout>
