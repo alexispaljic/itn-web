@@ -1,5 +1,7 @@
 ---
 import { Tick } from "@components/ui/icons";
+import SquareRoundedCheck from "@components/ui/icons/square-rounded-check.astro";
+
 import Link from "@components/ui/link.astro";
 
 const { card } = Astro.props;
@@ -16,7 +18,7 @@ const { card } = Astro.props;
       {
         card.features.map((item) => (
           <li class="flex items-start gap-3 text-gray-800">
-            <Tick class="w-6 h-6" />
+            <SquareRoundedCheck class="w-6 h-6" />
             <span>{item}</span>
           </li>
         ))
