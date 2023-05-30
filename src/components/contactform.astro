@@ -105,9 +105,10 @@ import Button from "./ui/button.astro";
     })
       .then(async (response) => {
         let json = await response.json();
+        // 📖 https://docs.web3forms.com/getting-started/api-reference
         if (response.status == 200) {
           result.classList.add("text-green-500");
-          result.innerHTML = json.message;
+          result.innerHTML = "Email envoyé avec succès !";
         } else {
           console.log(response);
           result.classList.add("text-red-500");
@@ -116,7 +117,7 @@ import Button from "./ui/button.astro";
       })
       .catch((error) => {
         console.log(error);
-        result.innerHTML = "L'envoi a échoué s!";
+        result.innerHTML = "L'envoi a échoué !";
       })
       .then(function () {
         form.reset();
