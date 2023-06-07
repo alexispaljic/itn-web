@@ -4,29 +4,34 @@ import Link from "@components/ui/link.astro";
 import ITNLogo from "@components/itn-logo.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import { Icon } from "astro-icon";
 
 const menuitems = [
-  {
-    title: "Features",
-    path: "#",
-    children: [
-      { title: "Action", path: "/" },
-      { title: "Another action", path: "#" },
-      { title: "Dropdown Submenu", path: "#" },
-      { title: "404 Page", path: "/404" },
-    ],
-  },
+  // {
+  //   title: "Features",
+  //   path: "#",
+  //   children: [
+  //     { title: "Action", path: "/" },
+  //     { title: "Another action", path: "#" },
+  //     { title: "Dropdown Submenu", path: "#" },
+  //     { title: "404 Page", path: "/404" },
+  //   ],
+  // },
   {
     title: "Organisation",
     path: "/organisation",
   },
   {
-    title: "About",
+    title: "A propos",
     path: "/about",
   },
   {
-    title: "Blog",
+    title: "Actualités",
     path: "/blog",
+  },
+  {
+    title: "Mentions",
+    path: "/mentions",
   },
   {
     title: "Contact",
@@ -69,17 +74,27 @@ const menuitems = [
               </>
             ))
           }
+          <li>
+            <div class="h-10 lg:hidden flex items-center gap-4">
+              <a href="#"
+                ><Icon class="text-black w-6 h-6" name="brand-twitter" /></a
+              >
+              <a href="#"
+                ><Icon class="text-black w-6 h-6" name="brand-github" /></a
+              >
+              <a href="#"
+                ><Icon class="text-black w-6 h-6" name="brand-discord" /></a
+              >
+            </div>
+          </li>
         </ul>
-        <div class="lg:hidden flex items-center mt-3 gap-4">
-          <Link href="#" style="muted" block size="md">Log in</Link>
-          <Link href="#" size="md" block>Sign up</Link>
-        </div>
       </MenuItems>
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
-        <a href="#">Log in</a>
-        <Link href="#" size="md">Sign up</Link>
+        <a href="#"><Icon class="text-black w-6 h-6" name="brand-twitter" /></a>
+        <a href="#"><Icon class="text-black w-6 h-6" name="brand-discord" /></a>
+        <a href="#"><Icon class="text-black w-6 h-6" name="brand-github" /></a>
       </div>
     </div>
   </header>
