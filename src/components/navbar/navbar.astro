@@ -5,6 +5,7 @@ import ITNLogo from "@components/itn-logo.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 import { Icon } from "astro-icon";
+import Social from "@components/social.astro";
 
 const menuitems = [
   // {
@@ -75,27 +76,13 @@ const menuitems = [
             ))
           }
           <li>
-            <div class="h-10 lg:hidden flex items-center gap-4">
-              <a href="https://twitter.com/ITN_MinesParis"
-                ><Icon class="text-black w-6 h-6" name="brand-twitter" /></a
-              >
-              <a href="https://github.com/orgs/ITN-Mines-Paris-PSL"
-                ><Icon class="text-black w-6 h-6" name="brand-github" /></a
-              >
-            </div>
+            <Social extra="flex lg:hidden" />
           </li>
         </ul>
       </MenuItems>
     </Astronav>
     <div>
-      <div class="hidden lg:flex items-center gap-4">
-        <a href="https://twitter.com/ITN_MinesParis"
-          ><Icon class="text-black w-6 h-6" name="brand-twitter" /></a
-        >
-        <a href="https://github.com/orgs/ITN-Mines-Paris-PSL"
-          ><Icon class="text-black w-6 h-6" name="brand-github" /></a
-        >
-      </div>
+      <Social extra="lg:flex hidden" />
     </div>
   </header>
 </Container>
