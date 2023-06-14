@@ -65,7 +65,7 @@ Quelques exemples de projets et d'activités de l'ITN :
     des dispositifs numériques (objets connectés, télé-consultations, télé-surveillance, utilisation des base de données et IA pour améliorer les diagnostics et les traitements. Le CGS (F. Kletz) accompagne les établissements hospitaliers (APHP, hôpital Saint-Josepj, etc.) dans cette démarche via des partenariats contractuels.
 
   - **SNCF (2023).** 
-    Le centre de gestion scientifque (CGS) de  Mines Paris (C. Dalmasso) collabore avec la SNCF pour former les agents à la sécurité sur les voies lors de situations potentiellement dangereuses au moyen de technologies immersives. 
+    Le centre de gestion scientifique (CGS) de  Mines Paris (C. Dalmasso) collabore avec la SNCF pour former les agents à la sécurité sur les voies lors de situations potentiellement dangereuses au moyen de technologies immersives. 
 
   - **ITHACA (2020).** 
     Immersion and training with Holograms for Art, Craft and Audiovisual, financée par la commission européenne. Une collaboration entre le centre de Robotique de Mines Paris PSL, le Fraunhofer IPK Berlin et le studio de création French Touch Factory.
