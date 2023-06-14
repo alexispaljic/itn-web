@@ -8,13 +8,14 @@ Vision
 --------------------------------------------------------------------------------
 
 L’ITN entreprend des projets ambitieux dans les sciences et technologies du numérique.  
+
 A ce stade de son développement l'accent est mis sur les axes porteurs suivants :
 
-  - l’ingénierie numérique,
+  - le calcul scientifique,
 
   - les industries culturelles et créatives,
 
-  - la santé.
+  - la santé et le numérique.
 
 L’approche est multidisciplinaire ; l'ITN est associé à l’ensemble des départements de MINES Paris – PSL :
 
