@@ -1,14 +1,10 @@
 ---
 title: Projets
-layout: ../layouts/ProjectsLayout.astro
+desc:  L'ITN en action
+layout: ../layouts/StandardLayout.astro
 ---
 
-
-Projets
-================================================================================
-
-
-Positionnement
+Vision
 --------------------------------------------------------------------------------
 
 L’ITN entreprend des projets ambitieux dans les sciences et technologies du numérique.  
