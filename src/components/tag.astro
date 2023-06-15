@@ -1,0 +1,16 @@
+---
+const { color = "slate", tag } = Astro.props;
+const background = `bg-${color}-50`;
+const bulletColor = `text-${color}-600`;
+
+// Tailwind tree shaker
+("bg-sky-50 bg-purple-50 bg-red-50");
+("text-sky-600 text-purple-600 text-red-600");
+---
+
+<div class=`${background} rounded px-2.5 shrink-0`>
+    <span
+        class=`${bulletColor} before:mr-0.5 before:content-['•'] before:text-xl text-slate`
+    ></span>
+    <span>{tag}</span>
+</div>

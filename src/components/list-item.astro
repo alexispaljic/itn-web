@@ -1,0 +1,18 @@
+---
+import { Icon } from "astro-icon";
+const { color = "slate", icon = "circle-filled" } = Astro.props;
+
+// Tailwind tree shaker
+("bg-sky-100 bg-purple-100 bg-red-100");
+("text-sky-600 text-purple-600 text-red-600");
+
+const spanClass = `absolute -left-8 top-1 mt-0 h-6 w-6 rounded-full inline-flex items-center justify-center bg-${color}-100`;
+const iconClass = `inline-block w-4 h-4 text-${color}-600`;
+---
+
+<li class="relative">
+    <span class={spanClass}>
+        <Icon name={icon} class={iconClass} />
+    </span>
+    <slot />
+</li>
