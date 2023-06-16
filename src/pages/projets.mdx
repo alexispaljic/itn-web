@@ -6,16 +6,16 @@ layout: ../layouts/StandardLayout.astro
 
 import { Icon } from "astro-icon";
 
-import Tag from "../components/tag.astro";
+import Tag from "../components/tag2.astro";
 import ListItem from "../components/list-item.astro";
 
 L’ITN entreprend des projets ambitieux dans les sciences et technologies du numérique.  
 A ce stade de son développement l'accent est mis sur les axes suivants :
 
-<nav class="block flex flex-col md:flex-row gap-4">
-  <Tag color="sky" tag="Calcul scientifique" />
-  <Tag color="purple" tag="Industries culturelles et créatives" />
-  <Tag color="red" tag="Santé numérique" />
+<nav class="block flex flex-col justify-center md:flex-row gap-4">
+  <Tag color="sky" icon="abacus" tag="Calcul scientifique" />
+  <Tag color="purple" icon="palette" tag="Industries créatives" />
+  <Tag color="red" icon="vaccine" tag="Santé numérique" />
 </nav>
 
 Dans le contexte d’une société «post-digitale», l’ITN accompagne l’industrie et la société vers «le cyber-monde» où l’homme et la machine doivent cohabiter, de même que le réel et le virtuel.
