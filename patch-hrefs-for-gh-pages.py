@@ -17,7 +17,7 @@ for path in Path("dist").rglob("*.html"):
         srcset_paths = string[1:-1].split(",")
         #print(srcset_paths)
         srcset_paths = [f"{ROOT}{p}" for p in srcset_paths if p.startswith("/")]
-        srcset =  f'srcset="{" ".join(srcset_paths)}"'
+        srcset =  f'srcset="{",".join(srcset_paths)}"'
         src = src[:start] + srcset + src[end:]
     with path.open(mode="w", encoding="utf-8") as f:
         f.write(src)
