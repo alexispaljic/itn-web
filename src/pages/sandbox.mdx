@@ -1,0 +1,73 @@
+---
+title: Mentions
+desc: Code et design open-source
+layout: ../layouts/StandardLayout.astro
+---
+
+import OpenSourceCard from "../components/open-source-card.astro";
+import astroImage from "assets/astro.png";
+import tailwindCSSImage from "assets/tailwind-css.png";
+import blurryImage from "assets/blurry.png";
+import astroshipImage from "assets/astroship.png";
+import interImage from "assets/inter.png";
+import tablerIconsImage from "assets/tabler-icons.png";
+
+<OpenSourceCard
+  name="Astro"
+  by="Astro Technology Compagny"
+  image={astroImage}
+  description="Le framework web tout-en-un optimisé pour la vitesse."
+  homepage="https://astro.build"
+  github="https://github.com/withastro/"
+  license="Licence MIT"
+/>
+
+<OpenSourceCard
+  name="Astroship"
+  by="Web3Templates"
+  image={astroshipImage}
+  description="Thème Astro pour les start-ups & sites de marketing."
+  homepage="https://astroship.web3templates.com/"
+  github="https://github.com/surjithctly/astroship"
+  license="Licence GPL 3.0"
+/>
+
+<OpenSourceCard
+  name="Tailwind CSS"
+  by="Tailwind Labs"
+  image={tailwindCSSImage}
+  description="Un framework CSS qui permet de créer n'importe quel design directement en HTML."
+  homepage="https://tailwindcss.com/"
+  github="https://github.com/tailwindlabs/tailwindcss"
+  license="Licence MIT"
+/>
+
+<OpenSourceCard
+  name="Inter"
+  by="Rasmus Andersson"
+  image={interImage}
+  description="Une police de caractères pour les écrans conçue avec soin."
+  homepage="https://rsms.me/inter/"
+  github="https://github.com/rsms/inter"
+  license="Licence SIL Open Font (OFL)"
+/>
+
+<OpenSourceCard
+  name="Tabler Icons"
+  image={tablerIconsImage}
+  by="Paweł Kuna"
+  description="Une famille de 4200+ icônes vectorielles cohérente et magnifique."
+  homepage="https://tabler.io/icons"
+  github="https://github.com/tabler/tabler-icons"
+  license="Licence MIT"
+/>
+
+<OpenSourceCard
+  name="Blurry"
+  by="Domenico Bruzzese"
+  image={blurryImage}
+  description="Simulation de la profondeur de champ avec des particules sur un shader."
+  homepage="https://domenicobrz.github.io/webgl/"
+  github="https://github.com/Domenicobrz/Blurry"
+  license="Licence MIT"
+/>
