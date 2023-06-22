@@ -1,6 +1,6 @@
 ---
 title: Mentions
-desc: Code et design open-source
+desc: Code | Design | Open-source
 layout: ../layouts/StandardLayout.astro
 ---
 
@@ -11,12 +11,28 @@ import blurryImage from "assets/blurry.png";
 import astroshipImage from "assets/astroship.png";
 import interImage from "assets/inter.png";
 import tablerIconsImage from "assets/tabler-icons.png";
+import ITNImage from "assets/ITN.png";
+
+Le site web de l'ITN est développé publiquement et ses composants sont réutilisables.
+
+<OpenSourceCard
+  name="ITN"
+  by="Sébastien Boisgérault"
+  image={ITNImage}
+  description="Le site web de l'Institut des Transformations Numériques"
+  homepage="https://itn.minesparis.psl.eu"
+  github="https://github.com/boisgera/itn-web"
+  license="Licence GPL 3.0"
+/>
+
+Sa conception a été rendue possible par les projets open-source ci-dessous.
+Nous les remercions d'exister et nous vous les recommandons chaleureusement !
 
 <OpenSourceCard
   name="Astro"
   by="Astro Technology Compagny"
   image={astroImage}
-  description="Le framework web tout-en-un optimisé pour la vitesse."
+  description="Le framework web moderne & rapide"
   homepage="https://astro.build"
   github="https://github.com/withastro/"
   license="Licence MIT"
@@ -26,7 +42,7 @@ import tablerIconsImage from "assets/tabler-icons.png";
   name="Astroship"
   by="Web3Templates"
   image={astroshipImage}
-  description="Thème Astro pour les start-ups & sites de marketing."
+  description="Thème Astro pour les start-ups et sites de marketing"
   homepage="https://astroship.web3templates.com/"
   github="https://github.com/surjithctly/astroship"
   license="Licence GPL 3.0"
@@ -36,8 +52,8 @@ import tablerIconsImage from "assets/tabler-icons.png";
   name="Tailwind CSS"
   by="Tailwind Labs"
   image={tailwindCSSImage}
-  description="Un framework CSS qui permet de créer n'importe quel design directement en HTML."
   homepage="https://tailwindcss.com/"
+  description="Le design directement en HTML"
   github="https://github.com/tailwindlabs/tailwindcss"
   license="Licence MIT"
 />
@@ -46,7 +62,7 @@ import tablerIconsImage from "assets/tabler-icons.png";
   name="Inter"
   by="Rasmus Andersson"
   image={interImage}
-  description="Une police de caractères pour les écrans conçue avec soin."
+  description="Une famille de fontes sobre et élégante"
   homepage="https://rsms.me/inter/"
   github="https://github.com/rsms/inter"
   license="Licence SIL Open Font (OFL)"
@@ -56,7 +72,7 @@ import tablerIconsImage from "assets/tabler-icons.png";
   name="Tabler Icons"
   image={tablerIconsImage}
   by="Paweł Kuna"
-  description="Une famille de 4200+ icônes vectorielles cohérente et magnifique."
+  description="Une famille cohérente de 4200+ icônes"
   homepage="https://tabler.io/icons"
   github="https://github.com/tabler/tabler-icons"
   license="Licence MIT"
@@ -66,7 +82,7 @@ import tablerIconsImage from "assets/tabler-icons.png";
   name="Blurry"
   by="Domenico Bruzzese"
   image={blurryImage}
-  description="Simulation de la profondeur de champ avec des particules sur un shader."
+  description="Simule de la profondeur de champ en WebGL"
   homepage="https://domenicobrz.github.io/webgl/"
   github="https://github.com/Domenicobrz/Blurry"
   license="Licence MIT"

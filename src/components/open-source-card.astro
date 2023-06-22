@@ -2,19 +2,17 @@
 import { Icon } from "astro-icon";
 import { Picture } from "@astrojs/image/components";
 
-import tailwindImage from "assets/tailwind-css.png";
-
 const { name, by, image, description, homepage, github, license } = Astro.props;
 ---
 
 <div
-    class="no-prose p-8 mb-8 rounded-md border-solid border-[#D8DEE9] border-opacity-50 border-2 px-4 py-2">
+    class="no-prose mb-8 rounded-md border-solid border-[#D8DEE9] border-opacity-50 border-2 px-4 py-4">
     {
         image && (
             <Picture
                 src={image}
                 alt={name}
-                class="rounded-md mt-2"
+                class="rounded-md my-0 mb-4"
                 widths={[200, 400, 600]}
                 aspectRatio="16:9"
             />
@@ -22,11 +20,8 @@ const { name, by, image, description, homepage, github, license } = Astro.props;
     }
     <div>
         <span class="flex justify-left gap-2 relative"
-            ><b>{name}</b>
-            <span class="relative -top-0.5 text-slate-900">
-                <a href={homepage} class="no-underline text-slate-900">
-                    <Icon name="home-link" class="inline h-4 w-4" />
-                </a>
+            ><b><a href={homepage} class="no-underline">{name}</a></b>
+            <span class="relative -top-[1px] text-slate-900">
                 <a href={github} class="no-underline text-slate-900">
                     <Icon name="brand-github-filled-2" class="inline h-4 w-4" />
                 </a>
@@ -35,17 +30,11 @@ const { name, by, image, description, homepage, github, license } = Astro.props;
         <p class="my-1 text-black">{description}</p>
         <div class="text-slate-600 flex justify-between">
             <span class="text-slate-600">
-                <span class="text-slate-600 relative mr-2"
-                    ><Icon
-                        name="copyright"
-                        class="relative -top-0.5 inline h-4 w-4"
-                    />
-                    {by}</span
-                >
+                {by} –
                 <span class="text-slate-600 relative">
                     <Icon
                         name="scale"
-                        class="relative -top-0.5 inline h-4 w-4"
+                        class="relative -top-[1px] inline h-4 w-4"
                     />
                 </span>
                 {license}
