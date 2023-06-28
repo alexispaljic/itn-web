@@ -7,7 +7,7 @@ image: {
     src: "/salle-cortot-430x240.png",
     alt: "Salle Cortot"
 }
-publishDate: "2023-06-28 17:10"
+publishDate: "2023-06-27 17:10"
 category: "Évènements"
 author: "Brigitte d'Andréa-Novel"
 tags: [musique, création, métavers, inauguration]
