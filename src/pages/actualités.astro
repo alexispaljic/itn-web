@@ -61,7 +61,14 @@ publishedBlogEntries.sort(function (a, b) {
                       <time
                         class="text-gray-400"
                         datetime={blogPostEntry.data.publishDate.toISOString()}>
-                        {blogPostEntry.data.publishDate.toDateString()}
+                        {blogPostEntry.data.publishDate
+                          .toLocaleDateString("fr-FR", {
+                            weekday: "short",
+                            year: "numeric",
+                            month: "short",
+                            day: "numeric",
+                          })
+                          .replace(/^\w/, (c) => c.toUpperCase())}
                       </time>
                     </div>
                   </div>
