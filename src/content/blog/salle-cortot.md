@@ -13,7 +13,7 @@ author: "Brigitte d'Andréa-Novel"
 tags: [musique, création, métavers, inauguration]
 ---
 
-🚧 Work in progress 🚧
+🚧 **Work in progress** 🚧
 
 A l'occasion de son lancement, l'Institut des Transformations Numériques (ITN)
 propose une création immersive originale à partir d'un concert Chopin & Wissmer. 
