@@ -13,6 +13,8 @@ author: "Brigitte d'Andréa-Novel"
 tags: [musique, création, métavers, inauguration]
 ---
 
+🚧 Work in progress 🚧
+
 A l'occasion de son lancement, l'Institut des Transformations Numériques (ITN)
 propose une création immersive originale à partir d'un concert Chopin & Wissmer. 
 Ce rendez-vous aura lieu le **mardi 5 décembre 2023 à 20h00** dans la **salle Alfred
