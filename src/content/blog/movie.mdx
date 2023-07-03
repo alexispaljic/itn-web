@@ -35,22 +35,24 @@ Les conférences sont faites par des acteurs majeurs de l’industrie (automobil
 
 ### Compétences
 
-import ListItem from "@components/list-item.astro";
+import Item from "@components/item.astro";
 
 MOVIE développe les compétences des étudiants dans les domaines suivants :
 
-<ul class="ml-[10px]">
-  <ListItem icon="hand-finger">**Interactions**</ListItem>
-  <ListItem icon="users-group">**Collaboration**</ListItem>
-  <ListItem icon="accessible">**Accessibilité**</ListItem>
-  <ListItem icon="code">**Programmation**</ListItem>
-  <ListItem icon="device-gamepad-2">**Conception de jeu**</ListItem>
-  <ListItem icon="frustum">**Modélisation 3D**</ListItem>
-  <ListItem icon="augmented-reality">**Réalité augmentée**</ListItem>
-  <ListItem icon="badge-vr">**Réalité virtuelle**</ListItem>
-  <ListItem icon="stereo-glasses">**Photogrammétrie**</ListItem>
-  <ListItem icon="currency-euro">**Modèles économiques**</ListItem>
-</ul>
+<div>
+  <div class="w-[240px] sm:ml-4 sm:w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-4">
+    <Item icon="hand-finger">**Interactions**</Item>
+    <Item icon="users-group">**Collaboration**</Item>
+    <Item icon="accessible">**Accessibilité**</Item>
+    <Item icon="code">**Programmation**</Item>
+    <Item icon="device-gamepad-2">**Conception de jeu**</Item>
+    <Item icon="frustum">**Modélisation 3D**</Item>
+    <Item icon="augmented-reality">**Réalité augmentée**</Item>
+    <Item icon="badge-vr">**Réalité virtuelle**</Item>
+    <Item icon="stereo-glasses">**Photogrammétrie**</Item>
+    <Item icon="currency-euro">**Modèles économiques**</Item>
+  </div>
+</div>
 
 ### Projets 2023
 
