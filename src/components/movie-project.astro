@@ -1,0 +1,63 @@
+---
+import { Image } from "@astrojs/image/components";
+import { Picture } from "@astrojs/image/components";
+import { Icon } from "astro-icon";
+
+import crossingTheLandscape from "assets/crossing-the-landscape.png";
+---
+
+<div class="flex overflow-hidden">
+    <Image
+        src={crossingTheLandscape}
+        class="rounded-l-md m-0"
+        alt="Crossing the Landscape"
+        width={200}
+        height={200}
+        loading="eager"
+        format="avif"
+    />
+    <div
+        class="h-[200px] grow border-r-[#D8DEE9] rounded-r-md border-opacity-50 border-r-2 border-y-2 px-4 py-4">
+        <div class="flex gap-4">
+            <span class="font-semibold">Capture volumétrique de danse</span>
+            <span class="text-gray-600">
+                <span
+                    class="transititext-primary text-primary transition duration-50 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                    data-te-toggle="tooltip"
+                    title="Photogrammétrie">
+                    <Icon
+                        class="hover:text-gray-900 inline-block w-4 h-4"
+                        name="stereo-glasses"
+                    />
+                </span>
+                <span
+                    class="transititext-primary text-primary transition duration-50 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                    data-te-toggle="tooltip"
+                    title="Modélisation 3D">
+                    <Icon
+                        class="hover:text-gray-900 inline-block w-4 h-4"
+                        name="frustum"
+                    />
+                </span>
+            </span>
+        </div>
+        <span class="text-slate-500">Céleste Rogosin</span>
+
+        <p class="text-sm">
+            L'objet du projet est de mettre en place un système de capture 3D
+            permettant de réaliser une capture vidéogrammétrique, puis de
+            dialoguer avec l'artiste de façon à soutenir son projet de
+            questionnement, au corps, sa représentation, et l'influence de la
+            technologie dans la création artistique. Les élèves choisissant ce
+            projet pourront passer par le fablab de l'école afin d'explorer avec
+            l'artiste de nouvelles approche d'impressions 2D ou 3D. L'objet du
+            projet est de mettre en place un système de capture 3D permettant de
+            réaliser une capture vidéogrammétrique, puis de dialoguer avec
+            l'artiste de façon à soutenir son projet de questionnement, au
+            corps, sa représentation, et l'influence de la technologie dans la
+            création artistique. Les élèves choisissant ce projet pourront
+            passer par le fablab de l'école afin d'explorer avec l'artiste de
+            nouvelles approche d'impressions 2D ou 3D.
+        </p>
+    </div>
+</div>
