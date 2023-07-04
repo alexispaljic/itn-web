@@ -61,7 +61,52 @@ MOVIE développe les compétences des étudiants dans les domaines suivants :
 
 import MovieProject from "@components/movie-project.astro";
 
-<MovieProject />
+import crossingTheLandscape from "assets/crossing-the-landscape.png";
+export const danseDescription = ` 
+  L'objet du projet est de mettre en place un 
+  système de capture 3D de performances de danse, 
+  puis d'échanger avec l'artiste pour l'assister dans son projet artistique.`;
+
+<MovieProject
+  title="L'essence de la danse"
+  author="Céleste Rogosin"
+  tags="Photogrammétrie, Modélisation 3D"
+  image={crossingTheLandscape}
+  description={danseDescription}
+  url="https://projet-ingenierie.minesparis.psl.eu/portfolio/capture-volumetrique-et-danse-collaboration-avec-lartiste-celeste-rogosin/"
+  tags="Photogrammétrie, Modélisation 3D"
+/>
+
+import salleCortot from "assets/salle-cortot-nue.jpg";
+export const cortotDescription = `
+  Le projet consiste à fournir une interface d’expression au public de
+  la soirée d'inauguration de l'ITN salle Cortot, une performance
+  immersive collaborative autour de concerts Chopin et Wissmer.`;
+
+<MovieProject
+  title="Chopin & Wissmer en immersion"
+  author="Institut des Transformations Numériques"
+  image={salleCortot}
+  description={cortotDescription}
+  url="https://projet-ingenierie.minesparis.psl.eu/portfolio/casques-de-vr-et-interactions-multi-utilisateurs-2/"
+  tags="Interactions, Réalité virtuelle, Collaboration"
+/>
+
+import wheelchair from "assets/wheelchair.jpg";
+export const accessibleDescription = `
+Le projet consiste à inventer des interfaces d’interaction avec le contenu 
+culturel du château qui soient dédiées aux publics empêchés, 
+par exemple en situation de handicap moteur ou cognitif. 
+`;
+
+<MovieProject
+  title="Une culture accessible"
+  author="Château de Versailles"
+  tags="Interactions, Accessibilité"
+  image={wheelchair}
+  description={accessibleDescription}
+  url="https://projet-ingenierie.minesparis.psl.eu/portfolio/accessibilite-aux-contenus-numeriques-pour-les-publics-empeches/"
+/>
 
 - [Réalité augmentée sur les bustes du Chateau de Versailles](https://projet-ingenierie.minesparis.psl.eu/portfolio/projet-v1-les-statues-du-jardin-du-chateau-de-versailles/)
 
@@ -70,10 +115,6 @@ import MovieProject from "@components/movie-project.astro";
 - [Ecran auto-stéréoscopique et interactions multi-utilisateurs](https://projet-ingenierie.minesparis.psl.eu/portfolio/ecran-auto-stereoscopique-et-interactions-multi-utilisateurs/)
 
 - [Casques de VR et interactions multi-utilisateurs au château de Versailles](https://projet-ingenierie.minesparis.psl.eu/portfolio/casques-de-vr-et-interactions-multi-utilisateurs/)
-
-- [Interface d’expression pour le public pour le concert en salle Cortot du 5 décembre](https://projet-ingenierie.minesparis.psl.eu/portfolio/casques-de-vr-et-interactions-multi-utilisateurs-2/)
-
-- [Accessibilité aux contenus numériques pour les publics empêchés](https://projet-ingenierie.minesparis.psl.eu/portfolio/accessibilite-aux-contenus-numeriques-pour-les-publics-empeches/)
 
 ### Projets 2022
 

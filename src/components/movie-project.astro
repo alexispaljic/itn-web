@@ -4,15 +4,28 @@ import { Picture } from "@astrojs/image/components";
 import Link from "@components/ui/card-link.astro";
 import { Icon } from "astro-icon";
 
-import crossingTheLandscape from "assets/crossing-the-landscape.png";
+let { title, author, description, image, url, tags } = Astro.props;
 
-const url =
-    "https://projet-ingenierie.minesparis.psl.eu/portfolio/capture-volumetrique-et-danse-collaboration-avec-lartiste-celeste-rogosin/";
+tags = tags.split(",").map((tag) => tag.trim());
+
+const icons = {
+    Photogrammétrie: "stereo-glasses",
+    "Modélisation 3D": "frustum",
+    Interactions: "hand-finger",
+    Accessibilité: "accessible",
+    "Réalité virtuelle": "badge-vr",
+    Collaboration: "users-group",
+};
+
+// import crossingTheLandscape from "assets/crossing-the-landscape.png";
+
+// const url =
+//     "https://projet-ingenierie.minesparis.psl.eu/portfolio/capture-volumetrique-et-danse-collaboration-avec-lartiste-celeste-rogosin/";
 ---
 
-<div class="flex overflow-hidden">
+<div class="flex overflow-hidden mb-[32px]">
     <Image
-        src={crossingTheLandscape}
+        src={image}
         class="rounded-l-md m-0"
         alt="Crossing the Landscape"
         width="192"
@@ -23,38 +36,27 @@ const url =
     <div
         class="h-[192px] grow border-r-[#D8DEE9] rounded-r-md border-opacity-50 border-r-2 border-y-2 px-6 py-4">
         <div class="flex gap-4">
-            <span class="font-semibold leading-6 text-md"
-                >L'essence de la danse</span
-            >
+            <span class="font-semibold leading-6 text-md">{title}</span>
             <span class="h-0 text-gray-600 leading-6">
-                <span
-                    class="transititext-primary text-primary transition duration-50 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
-                    data-te-toggle="tooltip"
-                    title="Photogrammétrie">
-                    <Icon
-                        class="hover:text-gray-900 inline-block w-4 h-4"
-                        name="stereo-glasses"
-                    />
-                </span>
-                <span
-                    class="transititext-primary text-primary transition duration-50 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
-                    data-te-toggle="tooltip"
-                    title="Modélisation 3D">
-                    <Icon
-                        class="hover:text-gray-900 inline-block w-4 h-4"
-                        name="frustum"
-                    />
-                </span>
+                {
+                    tags.map((tag) => (
+                        <span
+                            class="transititext-primary text-primary transition duration-50 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                            data-te-toggle="tooltip"
+                            title={tag}>
+                            <Icon
+                                class="hover:text-gray-900 inline-block w-4 h-4"
+                                name={icons[tag]}
+                            />
+                        </span>
+                    ))
+                }
             </span>
         </div>
-        <span class="text-slate-400 leading-4 mt-0 text-sm"
-            >Céleste Rogosin</span
-        >
+        <span class="text-slate-400 leading-4 mt-0 text-sm">{author}</span>
 
         <p class="text-sm mt-[10px] mb-[10px]">
-            L'objet du projet est de mettre en place un système de capture 3D de
-            performances de danse, puis de dialoguer avec l'artiste pour
-            l'assister dans son projet artistique.
+            {description}
         </p>
 
         <p class="mt-[10px]">
