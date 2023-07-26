@@ -57,15 +57,17 @@ MOVIE développe les compétences des étudiants dans les domaines suivants :
   </div>
 </div>
 
-### Projets 2023
+### Movie 2023 -- Projets à venir
+
+Les étudiants choisirons un projet dans la liste suivante :
 
 import MovieProject from "@components/movie-project.astro";
 
 import crossingTheLandscape from "assets/crossing-the-landscape.png";
 export const danseDescription = ` 
-  L'objet du projet est de mettre en place un 
+  Vous mettrez en place un 
   système de capture 3D de performances de danse, 
-  puis d'échanger avec l'artiste pour l'assister dans son projet artistique.`;
+  puis échangerez avec l'artiste pour l'assister dans son projet artistique.`;
 
 <MovieProject
   title="L'essence de la danse"
@@ -79,8 +81,9 @@ export const danseDescription = `
 
 import salleCortot from "assets/salle-cortot-nue.jpg";
 export const cortotDescription = `
-  Le projet consiste à fournir une interface d’expression au public de
-  la soirée d'inauguration de l'ITN salle Cortot, une performance
+  Vous fournirez une interface d’expression au public de
+  la soirée d'inauguration de l'ITN salle Cortot, 
+  conçue comme une performance
   immersive collaborative autour de concerts Chopin et Wissmer.`;
 
 <MovieProject
@@ -94,7 +97,7 @@ export const cortotDescription = `
 
 import wheelchair from "assets/wheelchair.jpg";
 export const accessibleDescription = `
-Le projet consiste à inventer des interfaces d’interaction avec le contenu 
+Vous inventerez des interfaces d’interaction avec le contenu 
 culturel du château qui soient dédiées aux publics empêchés, 
 par exemple en situation de handicap moteur ou cognitif. 
 `;
@@ -116,32 +119,40 @@ par exemple en situation de handicap moteur ou cognitif.
 
 - [Casques de VR et interactions multi-utilisateurs au château de Versailles](https://projet-ingenierie.minesparis.psl.eu/portfolio/casques-de-vr-et-interactions-multi-utilisateurs/)
 
-### Projets 2022
+### Movie 2022 -- Vidéo de synthèse des projets
 
-[X](https://youtube.com/playlist?list=PLls-9b6cnD1xr21ORUI12m90pMZ1X55U0)
+import Video2 from "@components/video2.astro";
 
-import Video from "@components/video.astro";
+import esquive1 from "assets/L'Art de l'Esquive 1.png";
+import esquive2 from "assets/L'Art de l'Esquive 2.png";
+import hameau1 from "assets/Le Hameau de la Reine.png";
+import miroir from "assets/Le Miroir Ardent.png";
+import lumière from "assets/Que la Lumière Soit !.png";
+import carto from "assets/Une Cartographie Sonore.png";
+import slasher1 from "assets/Slasher Movie 1.png";
+import slasher2 from "assets/Slasher Movie 2.png";
+import complot from "assets/Le Complot de Lautréamont.png";
+import flux from "assets/Flux de Données Géométriques.png";
+import clavecin1 from "assets/Le Clavecin Oculaire 1.png";
+import clavecin2 from "assets/Le Clavecin Oculaire 2.png";
+import trianon from "assets/Le Grand Trianon.png";
+import concert from "assets/Concert de Rock Virtuel.png";
+import maison from "assets/La Maison de la Reine.png";
 
-<div class="grid grid-cols-1 gap-6">
-  <Video height={24 * 9} width={24 * 16} id="3BhLajERE0M" />
-  <Video height={24 * 9} width={24 * 16} id="ZF8BY17M-zc" />
-  <Video height={24 * 9} width={24 * 16} id="KliVprK5o7Q" />
-  <Video height={24 * 9} width={24 * 16} id="hIGvVomujL8" />
-  <Video height={24 * 9} width={24 * 16} id="fM9njfixpFY" />
-  <Video height={24 * 9} width={24 * 16} id="8KhTWfjpUOc" />
-  <Video height={24 * 9} width={24 * 16} id="K_cy34IcMfE" />
-  <Video height={24 * 9} width={24 * 16} id="oqlAoKAcpjg" />
-  <Video height={24 * 9} width={24 * 16} id="nI62X_9a5k4" />
-  <Video height={24 * 9} width={24 * 16} id="Tj9D3VnCXDY" />
-  <Video height={24 * 9} width={24 * 16} id="SE7uZvc0FqA" />
-  <Video height={24 * 9} width={24 * 16} id="kPKDQA1FeKA" />
-  <Video height={24 * 9} width={24 * 16} id="-95rjzetGjE" />
-  <Video height={24 * 9} width={24 * 16} id="5pnLEZP0AB4" />
-  <Video height={24 * 9} width={24 * 16} id="zaoKoNdVe-E" />
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-[24px]">
+  <Video2 id="3BhLajERE0M" title="Le Hameau de la Reine" image={hameau1} />
+  <Video2 id="ZF8BY17M-zc" title="Le Miroir Ardent" image={miroir} />
+  <Video2 id="hIGvVomujL8" title="L'Art de l'Esquive 1" image={esquive1} />
+  <Video2 id="8KhTWfjpUOc" title="l'Art de l'Esquive 2" image={esquive2} />
+  <Video2 id="fM9njfixpFY" title="Que la Lumière Soit !" image={lumière} />
+  <Video2 id="oqlAoKAcpjg" title="Une Cartographie Sonore" image={carto} />
+  <Video2 id="K_cy34IcMfE" title="Slasher Movie 1" image={slasher1} />
+  <Video2 id="nI62X_9a5k4" title="Slasher Movie 2" image={slasher2} />
+  <Video2 id="Tj9D3VnCXDY" title="Le Complot de Lautréamont" image={complot} />
+  <Video2 id="SE7uZvc0FqA" title="Flux de Données Géométriques" image={flux} />
+  <Video2 id="kPKDQA1FeKA" title="Le Clavecin Oculaire 1" image={clavecin1} />
+  <Video2 id="zaoKoNdVe-E" title="Le Clavecin Oculaire 2" image={clavecin2} />
+  <Video2 id="KliVprK5o7Q" title="Le Grand Trianon" image={trianon} />
+  <Video2 id="-95rjzetGjE" title="Concert de Rock Virtuel" image={concert} />
+  <Video2 id="5pnLEZP0AB4" title="La Maison de la Reine" image={maison} />
 </div>
-
-### Projets 2021
-
-[X](https://youtube.com/playlist?list=PLls-9b6cnD1xxtzjuw93aO4GrU_jy3RMn)
-
-Source : [X](https://projet-ingenierie.minesparis.psl.eu/projet-movie/)
