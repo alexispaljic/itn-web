@@ -9,12 +9,12 @@ let { title, author, description, image, url, tags } = Astro.props;
 tags = tags.split(",").map((tag) => tag.trim());
 
 const icons = {
-    Photogrammétrie: "stereo-glasses",
-    "Modélisation 3D": "frustum",
-    Interactions: "hand-finger",
-    Accessibilité: "accessible",
-    "Réalité virtuelle": "badge-vr",
-    Collaboration: "users-group",
+  Photogrammétrie: "stereo-glasses",
+  "Modélisation 3D": "frustum",
+  Interactions: "hand-finger",
+  Accessibilité: "accessible",
+  "Réalité virtuelle": "badge-vr",
+  Collaboration: "users-group",
 };
 
 // import crossingTheLandscape from "assets/crossing-the-landscape.png";
@@ -23,49 +23,49 @@ const icons = {
 //     "https://projet-ingenierie.minesparis.psl.eu/portfolio/capture-volumetrique-et-danse-collaboration-avec-lartiste-celeste-rogosin/";
 ---
 
-<div class="flex overflow-hidden mb-[32px]">
-    <Image
-        src={image}
-        class="rounded-l-md m-0"
-        alt="Crossing the Landscape"
-        width="192"
-        height="192"
-        loading="eager"
-        format="avif"
-    />
-    <div
-        class="h-[192px] grow border-r-[#D8DEE9] rounded-r-md border-opacity-50 border-r-2 border-y-2 px-6 py-4">
-        <div class="flex gap-4">
-            <span class="font-semibold leading-6 text-md">{title}</span>
-            <span class="h-0 text-gray-600 leading-6">
-                {
-                    tags.map((tag) => (
-                        <span
-                            class="transititext-primary text-primary transition duration-50 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
-                            data-te-toggle="tooltip"
-                            title={tag}>
-                            <Icon
-                                class="hover:text-gray-900 inline-block w-4 h-4"
-                                name={icons[tag]}
-                            />
-                        </span>
-                    ))
-                }
+<div
+  class="flex overflow-hidden mb-[32px] rounded-md border-r-[#D8DEE9] border-opacity-50 border-2">
+  <Image
+    src={image}
+    class="hidden md:inline-block rounded-l-md m-0"
+    alt="Crossing the Landscape"
+    width="192"
+    height="192"
+    loading="eager"
+    format="avif"
+  />
+  <div class="h-[192px] grow px-6 py-4">
+    <div class="flex gap-4">
+      <span class="font-semibold leading-6 text-md">{title}</span>
+      <span class="h-0 text-gray-600 leading-6">
+        {
+          tags.map((tag) => (
+            <span
+              class="transititext-primary text-primary transition duration-50 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+              data-te-toggle="tooltip"
+              title={tag}>
+              <Icon
+                class="hover:text-gray-900 inline-block w-4 h-4"
+                name={icons[tag]}
+              />
             </span>
-        </div>
-        <span class="text-slate-400 leading-4 mt-0 text-sm">{author}</span>
-
-        <p class="text-sm mt-[10px] mb-[10px]">
-            {description}
-        </p>
-
-        <p class="mt-[10px]">
-            <a href={url} class="font-normal no-underline text-sm bg-white"
-                >En savoir plus <Icon
-                    class="inline-block w-4 h-4"
-                    name="arrow-right"
-                /></a
-            >
-        </p>
+          ))
+        }
+      </span>
     </div>
+    <span class="text-slate-400 leading-4 mt-0 text-sm">{author}</span>
+
+    <p class="text-sm mt-[10px] mb-[10px]">
+      {description}
+    </p>
+
+    <p class="mt-[10px]">
+      <a href={url} class="font-normal no-underline text-sm bg-white"
+        >En savoir plus <Icon
+          class="inline-block w-4 h-4"
+          name="arrow-right"
+        /></a
+      >
+    </p>
+  </div>
 </div>
