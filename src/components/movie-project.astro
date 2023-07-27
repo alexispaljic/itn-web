@@ -16,6 +16,7 @@ const icons = {
   "Réalité augmentée": "augmented-reality",
   "Réalité virtuelle": "badge-vr",
   Collaboration: "users-group",
+  Programmation: "code",
 };
 
 // import crossingTheLandscape from "assets/crossing-the-landscape.png";
@@ -25,17 +26,17 @@ const icons = {
 ---
 
 <div
-  class="flex overflow-hidden mb-[32px] rounded-md border-r-[#D8DEE9] border-opacity-50 border-2">
+  class="flex overflow-hidden mb-[32px] rounded-md border-r-[#D8DEE9] border-opacity-50 border-2 md:h-[196px]">
   <Image
     src={image}
     class="hidden md:inline-block rounded-l-md m-0"
     alt="Crossing the Landscape"
-    width="192"
-    height="192"
+    width="196"
+    height="196"
     loading="eager"
     format="avif"
   />
-  <div class="h-[192px] grow px-6 py-4">
+  <div class="md:h-[196px] grow px-6 py-4">
     <div class="flex gap-4">
       <span class="font-semibold leading-6 text-md">{title}</span>
       <span class="h-0 text-gray-600 leading-6">
@@ -60,16 +61,18 @@ const icons = {
       {description}
     </p>
 
-    <p class="mt-[10px]">
-      <a
-        href={url}
-        target="_blank"
-        class="font-normal no-underline text-sm bg-white"
-        >En savoir plus <Icon
-          class="inline-block w-4 h-4"
-          name="arrow-right"
-        /></a
-      >
-    </p>
+    {
+      url ? (
+        <p class="mt-[10px] mb-0">
+          <a
+            href={url}
+            target="_blank"
+            class="font-normal no-underline text-sm bg-white">
+            En apprendre plus{" "}
+            <Icon class="inline-block w-4 h-4" name="arrow-right" />
+          </a>
+        </p>
+      ) : null
+    }
   </div>
 </div>

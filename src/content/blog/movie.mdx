@@ -7,33 +7,40 @@ image:
     src: "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?&fit=crop&w=430&h=240",
     alt: "Oculus",
   }
-publishDate: "2023-06-25 17:10"
+publishDate: "2023-07-25 17:10"
 category: "Enseignement"
 author: "Alexis Paljic"
-tags: [conception, interaction, 3D, VR, AR, XR]
+tags: [interactions, réalité-virtuelle, réalité-augmentée, métavers]
 ---
 
-🚧 **Work in progress** 🚧
+Réalité Virtuelle et Réalité Augmentée font désormais partie intégrante
+des processus de conception et d’innovation dans l’industrie mondiale en
+raison des gains de créativité et productivité que ce technologies procurent.
+Les industries grand public, du cinéma, du jeu, de la formation,
+s’emparent également de ces technologies et les réinventent dans de nouveaux
+usages et de nouveaux modèles économiques.
+L’ingénieur doit être préparé aux challenges économiques, stratégiques,
+techniques, perceptifs, de ces nouveaux modes d’immersion et d’interaction
+avec les contenus numériques, car il y sera nécessairement exposé,
+et ce quel que soit son domaine d'activité.
 
-Bla-bla avant le blurb sur un démarrage de la X-ième session.
-
----
-
-La Réalité Virtuelle et Réalité Augmentée (VR, AR = XR) font partie intégrante des processus de conception et d’innovation dans l’industrie mondiale. XR est synonyme de gains de créativité et productivité. Les industries grand public, du cinéma, du jeu, de la formation, s’emparent également de ces technologies et les réinventent dans de nouveaux usages et de nouveaux modèles économiques. L’ingénieur doit être préparé aux challenges économiques, stratégiques, techniques, perceptifs, de ces nouveaux modes d’immersion et d’interaction avec les contenus numériques, car il y sera très probablement exposé, quel que soit son domaine.
+C'est précisément la problématique qu'adresse le module d'ingénierie MOVIE,
+dont une nouvelle session démarre en septembre 2023.
 
 ## Mondes Virtuels, Technologies, Enjeux et Société
 
-Pour construire cette culture théorique et pratique, le projet d’ingénierie MOVIE – Mondes Virtuels Technologies Enjeux et Société – intègre
+Pour construire cette culture théorique et pratique, le module d’ingénierie
+MOVIE – pour Mondes Virtuels Technologies Enjeux et Société – intègre
 
-- des cours théoriques en réalité virtuelle et synthèse d’image temps réel,
+- des cours théoriques,
 
-- un cyle de conférences par des acteurs socio-économiques en RV et RA,
+- un cyle de conférences,
 
-- des projets d'ingénierie opérationnels.
+- des projets d'ingénierie.
 
-Les conférences sont faites par des acteurs majeurs de l’industrie (automobile, jeux, cinéma). Les cours et conférences préparent à la mise en pratique lors des projets d’ingénierie opérationnels, avec une thématique différente chaque année.
-
-### Compétences
+Le cours ont notamment pour sujet la réalité virtuelle et la synthèse d’image temps réel.
+Les conférences sont animées par des acteurs majeurs de l’industrie
+(automobile, jeux, cinéma).
 
 import Item from "@components/item.astro";
 
@@ -57,27 +64,31 @@ MOVIE développe les compétences des étudiants dans les domaines suivants :
   </div>
 </div>
 
-### Movie 2023 -- Projets à venir
+Cours et conférences préparent les projets d’ingénierie, qui forment le volet
+pratique de l'enseignement. Les thématiques différent chaque année ;
+vous trouverez ci-dessous une liste des projets 2023 ainsi qu'un récaptitulatif
+des projets 2022.
 
-Les étudiants choisirons un projet dans la liste suivante :
+### MOVIE 2023 -- Projets à venir
+
+Les étudiants de la session à venir choisirons un projet dans la liste suivante :
 
 import MovieProject from "@components/movie-project.astro";
 
 import crossingTheLandscape from "assets/crossing-the-landscape.png";
 export const danseDescription = ` 
-  Vous mettrez en place un 
-  système de capture 3D de performances de danse, 
-  puis échangerez avec l'artiste Céleste Rogosin 
-  pour l'assister dans son projet artistique.`;
+  Pour assister Céleste Rogosin dans son projet artistique, 
+  vous mettrez en place un système de capture 3D de performances de danse,
+  puis étudierez de nouveaux usages de modèles 2D ou 3D produits en fablab.`;
 
 <MovieProject
-  title="L'essence de la danse"
+  title="Par-delà les corps"
   author="Céleste Rogosin"
   tags="Photogrammétrie, Modélisation 3D"
   image={crossingTheLandscape}
   description={danseDescription}
-  url="https://projet-ingenierie.minesparis.psl.eu/portfolio/capture-volumetrique-et-danse-collaboration-avec-lartiste-celeste-rogosin/"
-  tags="Photogrammétrie, Modélisation 3D"
+  url="../movie/par-delà-les-corps.html"
+  tags="Photogrammétrie, Programmation, Modélisation 3D"
 />
 
 import salleCortot from "assets/salle-cortot-nue.jpg";
@@ -92,7 +103,7 @@ export const cortotDescription = `
   author="Institut des Transformations Numériques"
   image={salleCortot}
   description={cortotDescription}
-  url="https://projet-ingenierie.minesparis.psl.eu/portfolio/casques-de-vr-et-interactions-multi-utilisateurs-2/"
+  url="salle-cortot.html"
   tags="Interactions, Réalité virtuelle, Collaboration"
 />
 
@@ -109,7 +120,6 @@ par exemple en situation de handicap moteur ou cognitif.
   tags="Interactions, Accessibilité"
   image={wheelchair}
   description={accessibleDescription}
-  url="https://projet-ingenierie.minesparis.psl.eu/portfolio/accessibilite-aux-contenus-numeriques-pour-les-publics-empeches/"
 />
 
 import buste from "assets/bustes-versailles.jpg";
@@ -125,7 +135,6 @@ en les animant en réalité augmentée.
   tags="Interactions, Modélisation 3D, Réalité augmentée"
   image={buste}
   description={busteDescription}
-  url="https://projet-ingenierie.minesparis.psl.eu/portfolio/projet-v1-les-statues-du-jardin-du-chateau-de-versailles/"
 />
 
 import statue from "assets/statue-versailles.jpg";
@@ -142,7 +151,6 @@ lorsqu'elle sont bâchées en hiver.
   tags="Interactions, Modélisation 3D, Réalité augmentée"
   image={statue}
   description={sculptureDescription}
-  url="https://projet-ingenierie.minesparis.psl.eu/portfolio/realite-augmentee-sur-les-statues-du-chateau-de-versailles/"
 />
 
 import maquette from "assets/versailles.jpg";
@@ -157,7 +165,6 @@ Château de Versailles sur un écran autostéréoscopique de grande taille.
   tags="Interactions, Collaboration, Modélisation 3D, Photogrammétrie"
   image={maquette}
   description={maquetteDescription}
-  url="https://projet-ingenierie.minesparis.psl.eu/portfolio/ecran-auto-stereoscopique-et-interactions-multi-utilisateurs/"
 />
 
 import foule from "assets/versailles-foule.jpg";
@@ -173,10 +180,11 @@ travers des interactions et activités de groupe.
   tags="Interactions, Collaboration, Réalité virtuelle"
   image={foule}
   description={fouleDescription}
-  url="https://projet-ingenierie.minesparis.psl.eu/portfolio/casques-de-vr-et-interactions-multi-utilisateurs/"
 />
 
-### Movie 2022 -- Vidéo de synthèse des projets
+### MOVIE 2022 -- Synthèse des projets
+
+Vidéos résumant les développements des projets 2022 :
 
 import Video2 from "@components/video2.astro";
 
