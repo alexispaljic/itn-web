@@ -67,7 +67,8 @@ import crossingTheLandscape from "assets/crossing-the-landscape.png";
 export const danseDescription = ` 
   Vous mettrez en place un 
   système de capture 3D de performances de danse, 
-  puis échangerez avec l'artiste pour l'assister dans son projet artistique.`;
+  puis échangerez avec l'artiste Céleste Rogosin 
+  pour l'assister dans son projet artistique.`;
 
 <MovieProject
   title="L'essence de la danse"
@@ -111,13 +112,69 @@ par exemple en situation de handicap moteur ou cognitif.
   url="https://projet-ingenierie.minesparis.psl.eu/portfolio/accessibilite-aux-contenus-numeriques-pour-les-publics-empeches/"
 />
 
-- [Réalité augmentée sur les bustes du Chateau de Versailles](https://projet-ingenierie.minesparis.psl.eu/portfolio/projet-v1-les-statues-du-jardin-du-chateau-de-versailles/)
+import buste from "assets/bustes-versailles.jpg";
+export const busteDescription = `
+Vous développerez une application mettant en valeur des sculptures de personnages 
+illustres du Château de Versailles en racontant leur histoire et
+en les animant en réalité augmentée.
+`;
 
-- [Réalité augmentée sur les statues des jardins de Versailles](https://projet-ingenierie.minesparis.psl.eu/portfolio/realite-augmentee-sur-les-statues-du-chateau-de-versailles/)
+<MovieProject
+  title="Animer la pierre"
+  author="Château de Versailles"
+  tags="Interactions, Modélisation 3D, Réalité augmentée"
+  image={buste}
+  description={busteDescription}
+  url="https://projet-ingenierie.minesparis.psl.eu/portfolio/projet-v1-les-statues-du-jardin-du-chateau-de-versailles/"
+/>
 
-- [Ecran auto-stéréoscopique et interactions multi-utilisateurs](https://projet-ingenierie.minesparis.psl.eu/portfolio/ecran-auto-stereoscopique-et-interactions-multi-utilisateurs/)
+import statue from "assets/statue-versailles.jpg";
+export const sculptureDescription = `
+En exploitant la réalité augmentée, 
+vous donnerez aux visiteurs du château de  Versailles 
+un accès permanent aux statues de son jardin, par exemple 
+lorsqu'elle sont bâchées en hiver.
+`;
 
-- [Casques de VR et interactions multi-utilisateurs au château de Versailles](https://projet-ingenierie.minesparis.psl.eu/portfolio/casques-de-vr-et-interactions-multi-utilisateurs/)
+<MovieProject
+  title="Voir l'invisible"
+  author="Château de Versailles"
+  tags="Interactions, Modélisation 3D, Réalité augmentée"
+  image={statue}
+  description={sculptureDescription}
+  url="https://projet-ingenierie.minesparis.psl.eu/portfolio/realite-augmentee-sur-les-statues-du-chateau-de-versailles/"
+/>
+
+import maquette from "assets/versailles.jpg";
+export const maquetteDescription = `
+Vous mettrez en place des interactions multi-utilisateurs avec des maquettes du 
+Château de Versailles sur un écran autostéréoscopique de grande taille.
+`;
+
+<MovieProject
+  title="Maquettes holographiques"
+  author="Château de Versailles"
+  tags="Interactions, Collaboration, Modélisation 3D, Photogrammétrie"
+  image={maquette}
+  description={maquetteDescription}
+  url="https://projet-ingenierie.minesparis.psl.eu/portfolio/ecran-auto-stereoscopique-et-interactions-multi-utilisateurs/"
+/>
+
+import foule from "assets/versailles-foule.jpg";
+export const fouleDescription = `
+Vous exploiterez une plate-forme de métavers pour permettre aux visiteurs du
+Château de Versailles munis de casques de découvrir son offre culturelle à
+travers des interactions et activités de groupe.
+`;
+
+<MovieProject
+  title="Ensemble au Château de Versailles"
+  author="Château de Versailles"
+  tags="Interactions, Collaboration, Réalité virtuelle"
+  image={foule}
+  description={fouleDescription}
+  url="https://projet-ingenierie.minesparis.psl.eu/portfolio/casques-de-vr-et-interactions-multi-utilisateurs/"
+/>
 
 ### Movie 2022 -- Vidéo de synthèse des projets
 
@@ -139,7 +196,7 @@ import trianon from "assets/Le Grand Trianon.png";
 import concert from "assets/Concert de Rock Virtuel.png";
 import maison from "assets/La Maison de la Reine.png";
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-[24px]">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-[24px] mb-[48px]">
   <Video2 id="3BhLajERE0M" title="Le Hameau de la Reine" image={hameau1} />
   <Video2 id="ZF8BY17M-zc" title="Le Miroir Ardent" image={miroir} />
   <Video2 id="hIGvVomujL8" title="L'Art de l'Esquive 1" image={esquive1} />
