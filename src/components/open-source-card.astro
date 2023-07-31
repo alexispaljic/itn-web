@@ -6,39 +6,36 @@ const { name, by, image, description, homepage, github, license } = Astro.props;
 ---
 
 <div
-    class="no-prose mb-8 rounded-md border-solid border-[#D8DEE9] border-opacity-50 border-2 px-4 py-4">
-    {
-        image && (
-            <Picture
-                src={image}
-                alt={name}
-                class="rounded-md my-0 mb-4"
-                widths={[200, 400, 600]}
-                aspectRatio="16:9"
-            />
-        )
-    }
-    <div>
-        <span class="flex justify-left gap-2 relative"
-            ><b><a href={homepage} class="no-underline">{name}</a></b>
-            <span class="relative -top-[1px] text-slate-900">
-                <a href={github} class="no-underline text-slate-900">
-                    <Icon name="brand-github-filled-2" class="inline h-4 w-4" />
-                </a>
-            </span></span
-        >
-        <p class="my-1 text-black">{description}</p>
-        <div class="text-slate-600 flex justify-between">
-            <span class="text-slate-600">
-                {by} –
-                <span class="text-slate-600 relative">
-                    <Icon
-                        name="scale"
-                        class="relative -top-[1px] inline h-4 w-4"
-                    />
-                </span>
-                {license}
-            </span>
-        </div>
+  class="not-prose mb-8 rounded-md border-solid border-[#D8DEE9] border-opacity-50 border-2 px-4 py-4">
+  {
+    image && (
+      <Picture
+        src={image}
+        alt={name}
+        class="rounded-md my-0 mb-4"
+        widths={[200, 400, 600]}
+        aspectRatio="16:9"
+      />
+    )
+  }
+  <div>
+    <span class="flex justify-left gap-2 relative"
+      ><b><a href={homepage} class="no-underline">{name}</a></b>
+      <span class="relative -top-[1px] text-slate-900">
+        <a href={github} class="no-underline text-slate-900">
+          <Icon name="brand-github-filled-2" class="inline h-4 w-4" />
+        </a>
+      </span></span
+    >
+    <p class="hyphens-auto my-8 text-black">{description}</p>
+    <div class="text-slate-600 flex justify-between">
+      <span class="text-slate-600">
+        {by} –
+        <span class="text-slate-600 relative">
+          <Icon name="scale" class="relative -top-[1px] inline h-4 w-4" />
+        </span>
+        {license}
+      </span>
     </div>
+  </div>
 </div>

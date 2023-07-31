@@ -28,7 +28,7 @@ const makeDescription = description
 ---
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="hyphens-auto">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -60,6 +60,9 @@ const makeDescription = description
         },
       }}
     />
+  <style is:global>
+      html { hyphens: auto }
+  </style>
   </head>
   <body>
     <Navbar />
