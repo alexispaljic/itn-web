@@ -2,33 +2,28 @@
 import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
-import "@fontsource/inter/variable.css";
+import "@fontsource-variable/inter/index.css";
 
 export interface Props {
   title: string;
-  description: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 const resolvedImageWithDomain = new URL(
-  "/itn-web/opengraph.jpg",
+  "/opengraph.jpg",
   Astro.site
 ).toString();
 
-const { title, description } = Astro.props;
+const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "ITN"
-  : "Institut des Transformations Numériques";
-
-const makeDescription = description
-  ? description
-  : "Sciences et technologies du numérique à Mines Paris – PSL";
+  ? title + " | " + "Astroship"
+  : "Astroship - Starter Template for Astro with Tailwind CSS";
 ---
 
 <!DOCTYPE html>
-<html lang="fr" class="hyphens-auto">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -38,31 +33,25 @@ const makeDescription = description
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description={makeDescription}
+      description="Astroship is a starter website template for Astro built with TailwindCSS."
       canonical={canonicalURL}
       twitter={{
-        creator: "@boisgera",
-        site: "@ITN_MinesParis",
-        title: makeTitle,
-        description: makeDescription,
+        creator: "@surjithctly",
+        site: "@web3templates",
         card: "summary_large_image",
-        image: resolvedImageWithDomain,
       }}
       openGraph={{
         basic: {
           url: canonicalURL,
           type: "website",
-          title: makeTitle,
+          title: `Astroship - Starter Template for Astro`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Capture d'écran du site de l'ITN",
+          alt: "Astroship Homepage Screenshot",
         },
       }}
     />
-  <style is:global>
-      html { hyphens: auto }
-  </style>
   </head>
   <body>
     <Navbar />
