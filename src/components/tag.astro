@@ -1,16 +1,20 @@
 ---
-const { color = "slate", tag } = Astro.props;
+import { Icon } from "astro-icon";
+
+const { color = "slate", icon = "circle-filled", tag } = Astro.props;
 const background = `bg-${color}-50`;
-const bulletColor = `text-${color}-600`;
+const spanClass = `relative top-[1px] h-6 w-6 rounded-full inline-flex items-center justify-center bg-${color}-50`;
+const iconClass = `inline-block w-4 h-4 text-${color}-600`;
 
 // Tailwind tree shaker
-("bg-sky-50 bg-purple-50 bg-red-50");
+("bg-sky-200 bg-purple-200 bg-red-200");
+("bg-sky-100 bg-purple-100 bg-red-100");
 ("text-sky-600 text-purple-600 text-red-600");
 ---
 
-<div class=`${background} rounded px-2.5 shrink-0`>
-    <span
-        class=`${bulletColor} before:mr-0.5 before:content-['•'] before:text-xl text-slate`
-    ></span>
-    <span>{tag}</span>
+<div class=`${background} relative px-1.5 rounded shrink-0`>
+    <span class={spanClass}>
+        <Icon name={icon} class={iconClass} />
+    </span>
+    <span class="mr-1.5">{tag}</span>
 </div>
