@@ -6,24 +6,29 @@ import "@fontsource-variable/inter/index.css";
 
 export interface Props {
   title: string;
+  description: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 const resolvedImageWithDomain = new URL(
-  "/opengraph.jpg",
+  "/itn-web/opengraph.jpg",
   Astro.site
 ).toString();
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Astroship"
-  : "Astroship - Starter Template for Astro with Tailwind CSS";
+  ? title + " | " + "ITN"
+  : "Institut des Transformations Numériques";
+
+const makeDescription = description
+  ? description
+  : "Sciences et technologies du numérique à Mines Paris – PSL";
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -33,25 +38,33 @@ const makeTitle = title
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Astroship is a starter website template for Astro built with TailwindCSS."
+      description={makeDescription}
       canonical={canonicalURL}
       twitter={{
-        creator: "@surjithctly",
-        site: "@web3templates",
+        creator: "@boisgera",
+        site: "@ITN_MinesParis",
+        title: makeTitle,
+        description: makeDescription,
         card: "summary_large_image",
+        image: resolvedImageWithDomain,
       }}
       openGraph={{
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship - Starter Template for Astro`,
+          title: makeTitle,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "Capture d'écran du site de l'ITN",
         },
       }}
     />
+    <style is:global>
+      html {
+        hyphens: auto;
+      }
+    </style>
   </head>
   <body>
     <Navbar />
