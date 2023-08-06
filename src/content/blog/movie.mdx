@@ -20,7 +20,17 @@ Les industries grand public, du cinéma, du jeu, de la formation,
 s’emparent également de ces technologies et les réinventent dans de nouveaux
 usages et de nouveaux modèles économiques.
 
-![Le casque de Réalité Virtuelle Oculus](https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac)
+import { Image } from "@astrojs/image/components";
+import oculus from "assets/oculus.jpg";
+
+<Image
+  src={oculus}
+  alt="Le casque de Réalité Virtuelle Oculus"
+  width="768"
+  loading="eager"
+  format="avif"
+/>
+;
 
 L’ingénieur doit être préparé aux challenges économiques, stratégiques,
 techniques, perceptifs, de ces nouveaux modes d’immersion et d’interaction
