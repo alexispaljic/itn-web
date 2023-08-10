@@ -30,3 +30,10 @@ for path in Path("dist").rglob("*.html"):
     )
     with path.open(mode="w", encoding="utf-8") as f:
         f.write(src)
+
+for path in Path("dist").rglob("*.css"):
+    with path.open(mode="r", encoding="utf-8") as f:
+        src = f.read()
+    src = src.replace('url(/_astro/', 'url(/itn-web/_astro/')
+    with path.open(mode="w", encoding="utf-8") as f:
+        f.write(src)
