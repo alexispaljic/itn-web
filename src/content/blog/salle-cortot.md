@@ -1,13 +1,10 @@
 ---
 draft: false
 title: "Chopin & Wissmer en immersion"
-snippet: "Création immersive à partir d’un concert Chopin - Wissmer, avec le soutien de l’École Normale de Musique de Paris, la fondation Mines Paris, l’Institut des Transformations Numériques de Mines Paris - PSL, CRESCENDO-APJM, l’Ircam, ArtenetrA, l’Action Musicale Pierre Wissmer, 
+description: "Création immersive à partir d’un concert Chopin - Wissmer, avec le soutien de l’École Normale de Musique de Paris, la fondation Mines Paris, l’Institut des Transformations Numériques de Mines Paris - PSL, CRESCENDO-APJM, l’Ircam, ArtenetrA, l’Action Musicale Pierre Wissmer, 
 l’Association Métavers Arts & Culture."
-image: {
-    src: "/salle-cortot-430x240.png",
-    alt: "Salle Cortot"
-}
-publishDate: "2023-06-27 17:10"
+image: "/salle-cortot-430x240.png"
+date: "2023-06-27 17:10"
 category: "Évènements"
 author: "Brigitte d'Andréa-Novel"
 tags: [musique, création, métavers, inauguration]

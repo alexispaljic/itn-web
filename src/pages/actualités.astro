@@ -7,12 +7,12 @@ import Sectionhead from "@components/sectionhead.astro";
 
 // Filter blog entries with 'draft: false' & date before current date
 const publishedBlogEntries = await getCollection("blog", ({ data }) => {
-  return !data.draft && data.publishDate < new Date();
+  return !data.draft && data.date < new Date();
 });
 
 // Sort content entries by publication date
 publishedBlogEntries.sort(function (a, b) {
-  return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
+  return b.data.date.valueOf() - a.data.date.valueOf();
 });
 ---
 
@@ -32,8 +32,8 @@ publishedBlogEntries.sort(function (a, b) {
               <a href={`/blog/${blogPostEntry.slug}`}>
                 <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center">
                   <Picture
-                    src={blogPostEntry.data.image.src}
-                    alt={blogPostEntry.data.image.alt}
+                    src={blogPostEntry.data.image}
+                    alt={blogPostEntry.data.title}
                     sizes="(max-width: 800px) 100vw, 800px"
                     widths={[200, 400, 800]}
                     aspectRatio="16:9"
@@ -60,8 +60,8 @@ publishedBlogEntries.sort(function (a, b) {
                       <span class="text-gray-400">• </span>
                       <time
                         class="text-gray-400"
-                        datetime={blogPostEntry.data.publishDate.toISOString()}>
-                        {blogPostEntry.data.publishDate
+                        datetime={blogPostEntry.data.date.toISOString()}>
+                        {blogPostEntry.data.date
                           .toLocaleDateString("fr-FR", {
                             weekday: "short",
                             year: "numeric",
