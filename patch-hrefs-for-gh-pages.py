@@ -29,8 +29,8 @@ for path in Path("dist").rglob("*.html"):
         'content="https://boisgera.github.io/itn-web/">'
     )
     src = src.replace(
-        'content="/>',
-        'content="/itn-web/>'
+        'content="/',
+        'content="/itn-web/'
     )
     with path.open(mode="w", encoding="utf-8") as f:
         f.write(src)
