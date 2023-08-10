@@ -4,7 +4,7 @@ import { Picture } from "@astrojs/image/components";
 import Layout from "@layouts/NewLayout.astro";
 
 // Filter blog entries with 'draft: false' & date before current date
-const publishedBlogEntries = await getCollection("blog", ({ data }) => {
+const publishedBlogEntries = await getCollection("actualités", ({ data }) => {
   return !data.draft && data.date < new Date();
 });
 
@@ -22,7 +22,7 @@ publishedBlogEntries.sort(function (a, b) {
       {
         publishedBlogEntries.map((blogPostEntry, index) => (
           <li>
-            <a href={`/blog/${blogPostEntry.slug}`}>
+            <a href={`/actualités/${blogPostEntry.slug}`}>
               <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center">
                 <Picture
                   src={blogPostEntry.data.image}
