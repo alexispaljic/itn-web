@@ -20,9 +20,13 @@ for path in Path("dist").rglob("*.html"):
         srcset =  f'srcset="{",".join(srcset_paths)}"'
         src = src[:start] + srcset + src[end:]
 
-    src.replace('<link rel="canonical" href="https://boisgera.github.io/">', 
-                '<link rel="canonical" href="https://boisgera.github.io/itn-web/">')
-    src.replace('content="https://boisgera.github.io/">',
-                'content="https://boisgera.github.io/itn-web/">')
+    src = src.replace(
+        '<link rel="canonical" href="https://boisgera.github.io/">', 
+        '<link rel="canonical" href="https://boisgera.github.io/itn-web/">'
+    )
+    src = src.replace(
+        'content="https://boisgera.github.io/">',
+        'content="https://boisgera.github.io/itn-web/">'
+    )
     with path.open(mode="w", encoding="utf-8") as f:
         f.write(src)
