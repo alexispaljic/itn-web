@@ -1,7 +1,10 @@
 ---
 import { getCollection } from "astro:content";
-import { Picture } from "@astrojs/image/components";
+import { Image, Picture } from "@astrojs/image/components";
 import Layout from "@layouts/NewLayout.astro";
+import salleCortot from "assets/salle-cortot.png";
+
+console.log("****", salleCortot);
 
 // Filter blog entries with 'draft: false' & date before current date
 const publishedBlogEntries = await getCollection("actualités", ({ data }) => {
@@ -27,6 +30,12 @@ function patch_url(url) {
   heading="Actualités"
   description="Suivez les dernières actualités de l'institut">
   <main class="mt-16">
+    <Image
+      width="800px"
+      aspectRatio="16:9"
+      src="itn-web/salle-cortot-430x240.png"
+      alt="test"
+    />
     <ul class="grid gap-16 max-w-4xl mx-auto">
       {
         publishedBlogEntries.map((blogPostEntry, index) => (
@@ -34,7 +43,7 @@ function patch_url(url) {
             <a href={blogPostEntry.slug}>
               <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center">
                 <Picture
-                  src={patch_url(blogPostEntry.data.image)}
+                  src={blogPostEntry.data.image}
                   alt={blogPostEntry.data.title}
                   sizes="(max-width: 800px) 100vw, 800px"
                   widths={[200, 400, 800]}

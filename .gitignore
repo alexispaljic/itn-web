@@ -5,6 +5,7 @@
 dist/
 .output/
 .astro
+itn-web/
 
 # dependencies
 node_modules/
