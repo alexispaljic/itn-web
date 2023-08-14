@@ -28,7 +28,8 @@ description = description
   ? description
   : "Sciences et technologies du numérique à Mines Paris – PSL";
 
-image = image ? image : "/opengraph.png";
+image = image ? image : "opengraph.png";
+image = new URL("/itn-web/" + image, Astro.site).toString();
 
 type = type ? type : "website";
 ---
