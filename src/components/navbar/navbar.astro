@@ -20,23 +20,23 @@ const menuitems = [
   // },
   {
     title: "Organisation",
-    path: "/organisation",
+    path: `organisation`,
   },
   {
     title: "Actualités",
-    path: "/actualites",
+    path: `actualites`,
   },
   {
     title: "Projets",
-    path: "/projets",
+    path: `projets`,
   },
   {
     title: "Mentions",
-    path: "/mentions",
+    path: `mentions`,
   },
   {
     title: "Contact",
-    path: "/contact",
+    path: `contact`,
   },
 ];
 ---
@@ -45,7 +45,7 @@ const menuitems = [
   <header class="flex flex-col lg:flex-row justify-between items-center my-5">
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-2xl"><ITNLogo /></a>
+        <a href={import.meta.env.BASE_URL} class="text-2xl"><ITNLogo /></a>
         <div class="block lg:hidden">
           <MenuIcon class="w-4 h-4 text-gray-800" />
         </div>

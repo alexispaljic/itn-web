@@ -28,9 +28,9 @@ jobs:
       - name: Build
         run: pnpm run build
 
-      - name: Post-Build Setup
-        run: |
-          python patch-hrefs-for-gh-pages.py
+      # - name: Post-Build Setup
+      #   run: |
+      #     python patch-hrefs-for-gh-pages.py
 
       - name: Deployment Setup
         run: |
