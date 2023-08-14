@@ -11,7 +11,7 @@ tags: [expérience-utilisateur, réalité-virtuelle, réalité-augmentée, méta
 
 Réalité Virtuelle et Réalité Augmentée font désormais partie intégrante
 des processus de conception et d’innovation dans l’industrie mondiale en
-raison des gains de créativité et productivité que ces technologies procurent.
+raison des gains de créativité et de productivité que ces technologies procurent.
 Les industries grand public, du cinéma, du jeu, de la formation,
 s’emparent également de ces technologies et les réinventent dans de nouveaux
 usages et de nouveaux modèles économiques.
@@ -47,8 +47,9 @@ MOVIE – pour Mondes Virtuels Technologies Enjeux et Société – intègre
 - des projets d'ingénierie.
 
 Le cours ont notamment pour sujet la réalité virtuelle et la synthèse d’image temps réel.
-Les conférences sont animées par des acteurs majeurs de l’industrie
-(automobile, jeux, cinéma).
+Les conférences sont animées par des acteurs industriels majeurs tels que
+[Ubisoft](https://www.ubisoft.com) (éditeur de jeux vidéo) ou [Atlas V](https://atlasv.io/fr/)
+(studio de création de films immersifs).
 
 import Item from "@components/item.astro";
 
@@ -68,6 +69,7 @@ MOVIE développe les compétences des étudiants dans les domaines suivants :
     <Item icon="augmented-reality">**Réalité augmentée**</Item>
     <Item icon="badge-vr">**Réalité virtuelle**</Item>
     <Item icon="stereo-glasses">**Photogrammétrie**</Item>
+    <Item icon="bulb">**Innovation**</Item>
     <Item icon="currency-euro">**Modèles économiques**</Item>
   </div>
 </div>
@@ -83,6 +85,22 @@ Les étudiants de la session à venir choisirons un projet dans la liste suivant
 
 import MovieProject from "@components/movie-project.astro";
 
+import salleCortot from "assets/salle-cortot-nue.jpg";
+export const cortotDescription = `
+  La soirée d'inauguration de l'ITN sera une performance
+  immersive autour de concerts de Chopin et Wissmer.
+  Vous développerez pour les artistes associés à ce projet 
+  une interface de création d'expériences visuelles et sonores.`;
+
+<MovieProject
+  title="Interface de création en Réalité Virtuelle"
+  author="Institut des Transformations Numériques"
+  image={salleCortot}
+  description={cortotDescription}
+  url="../salle-cortot"
+  tags="Interactions, Réalité virtuelle"
+/>
+
 import crossingTheLandscape from "assets/crossing-the-landscape.png";
 export const danseDescription = ` 
   Pour assister Céleste Rogosin dans son projet artistique, 
@@ -96,29 +114,13 @@ export const danseDescription = `
   image={crossingTheLandscape}
   description={danseDescription}
   url="../../movie/par-dela-les-corps"
-  tags="Photogrammétrie, Programmation, Modélisation 3D"
-/>
-
-import salleCortot from "assets/salle-cortot-nue.jpg";
-export const cortotDescription = `
-  Vous fournirez une interface d’expression au public de
-  la soirée d'inauguration de l'ITN salle Cortot, 
-  conçue comme une performance
-  immersive collaborative autour de concerts Chopin et Wissmer.`;
-
-<MovieProject
-  title="Chopin & Wissmer en immersion"
-  author="Institut des Transformations Numériques"
-  image={salleCortot}
-  description={cortotDescription}
-  url="../salle-cortot"
-  tags="Interactions, Réalité virtuelle, Collaboration"
+  tags="Photogrammétrie, Programmation, Modélisation 3D, Innovation"
 />
 
 import wheelchair from "assets/wheelchair.jpg";
 export const accessibleDescription = `
 Vous inventerez des interfaces d’interaction avec le contenu 
-culturel du château qui soient dédiées aux publics empêchés, 
+culturel du château de Versailles qui soient dédiées aux publics empêchés, 
 par exemple en situation de handicap moteur ou cognitif. 
 `;
 
@@ -133,7 +135,7 @@ par exemple en situation de handicap moteur ou cognitif.
 import buste from "assets/bustes-versailles.jpg";
 export const busteDescription = `
 Vous développerez une application mettant en valeur des sculptures de personnages 
-illustres du Château de Versailles en racontant leur histoire et
+illustres du château de Versailles en racontant leur histoire et
 en les animant en réalité augmentée.
 `;
 
@@ -164,7 +166,7 @@ lorsqu'elle sont bâchées en hiver.
 import maquette from "assets/versailles.jpg";
 export const maquetteDescription = `
 Vous mettrez en place des interactions multi-utilisateurs avec des maquettes du 
-Château de Versailles sur un écran autostéréoscopique de grande taille.
+château de Versailles sur un écran autostéréoscopique de grande taille.
 `;
 
 <MovieProject
@@ -178,12 +180,12 @@ Château de Versailles sur un écran autostéréoscopique de grande taille.
 import foule from "assets/versailles-foule.jpg";
 export const fouleDescription = `
 Vous exploiterez une plate-forme de métavers pour permettre aux visiteurs du
-Château de Versailles munis de casques de découvrir son offre culturelle à
+château de Versailles munis de casques de découvrir son offre culturelle à
 travers des interactions et activités de groupe.
 `;
 
 <MovieProject
-  title="Ensemble au Château de Versailles"
+  title="Ensemble au château de Versailles"
   author="Château de Versailles"
   tags="Interactions, Collaboration, Réalité virtuelle"
   image={foule}

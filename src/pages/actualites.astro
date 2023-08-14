@@ -4,8 +4,6 @@ import { Image, Picture } from "@astrojs/image/components";
 import Layout from "@layouts/NewLayout.astro";
 import salleCortot from "assets/salle-cortot.png";
 
-console.log("****", salleCortot);
-
 // Filter blog entries with 'draft: false' & date before current date
 const publishedBlogEntries = await getCollection("actualités", ({ data }) => {
   return !data.draft && data.date < new Date();
@@ -30,12 +28,6 @@ function patch_url(url) {
   heading="Actualités"
   description="Suivez les dernières actualités de l'institut">
   <main class="mt-16">
-    <Image
-      width="800px"
-      aspectRatio="16:9"
-      src="itn-web/salle-cortot-430x240.png"
-      alt="test"
-    />
     <ul class="grid gap-16 max-w-4xl mx-auto">
       {
         publishedBlogEntries.map((blogPostEntry, index) => (
