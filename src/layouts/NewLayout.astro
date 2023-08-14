@@ -16,7 +16,10 @@ interface Props {
   type?: "website" | "article";
 }
 
-const url = Astro.url.href;
+let url = Astro.url.href;
+if (url.endsWith("/")) {
+  url = url.slice(0, -1);
+}
 
 let { title, description, heading, image, type } = Astro.props;
 
