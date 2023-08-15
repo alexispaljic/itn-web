@@ -6,8 +6,8 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  base: "itn-web",
-  site: "https://boisgera.github.io",
+  base: "",
+  site: "http://localhost:3000",
   integrations: [
     tailwind(),
     image({
