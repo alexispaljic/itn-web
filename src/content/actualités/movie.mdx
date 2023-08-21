@@ -81,7 +81,7 @@ des projets 2022.
 
 ### MOVIE 2023 -- Projets à venir
 
-Les étudiants de la session à venir choisirons un projet dans la liste suivante :
+Les étudiants de la session à venir choisiront un projet dans la liste suivante :
 
 import MovieProject from "@components/movie-project.astro";
 
@@ -114,6 +114,19 @@ export const danseDescription = `
   description={danseDescription}
   url="../../movie/par-dela-les-corps"
   tags="Photogrammétrie, Programmation, Modélisation 3D, Innovation"
+/>
+
+import draping from "assets/draping.jpg";
+export const drapingDescription = ` 
+  Pour assister Céline Shen dans son projet artistique, vous mettrez en place une aplpication 3D permettant d'animer en réalité augmentée des vêtements sur un avatar du spectateur.
+  Vous manipulerez un système de motion capture et un moteur physique de simulation de tissus`;
+
+<MovieProject
+  title="Tissus dynamiques"
+  author="Céline Shen"
+  tags="Modélisation 3D, Programmation, Réalité Augmentée"
+  image={draping}
+  description={drapingDescription}
 />
 
 import wheelchair from "assets/wheelchair.jpg";
@@ -176,18 +189,11 @@ château de Versailles sur un écran autostéréoscopique de grande taille.
   description={maquetteDescription}
 />
 
-**Dummy modification!**
-
-import focus from "assets/focus.jpg";
+import focus from "assets/focusboxinggirl.jpg";
 export const focusdescription = `
 Résumé : Le focus d’attention désigne l’endroit vers lequel un individu
-dirige son attention. Lors d’une tâche motrice, il est admis qu’un focus d’attention externe
- (relatif au monde environnant) convoque de meilleures performances motrices qu’un focus interne 
- (relatif au corps propre). On connaît peu les implications du focus d’attention sur les propriétés et automatismes de certains gestes. 
- Celles-ci pourraient expliquer certains troubles du contrôle moteur humain.
- Comparer le mouvement d’écriture selon un focus interne et externe permettrait de mieux comprendre le rôle tenu par l’attention dans le contrôle moteur.
- La RV est un outil de choix pour proposer une expérience d’écriture pouvant influencer le type de focus d’attention et enregistrer des données comportementales.
- Les résultats pourront servir à publier un article scientifique fondé sur l’analyse des données recueillies dans l’expérience de RV.
+dirige son attention. Ce focus peut être interne (mon corps) ou externe (mon environnement).
+ Vous mettrez en place une expérience de réalité virtuelle permettant de modifier le focus d'attention lors d'une tâche (écriture, mouvement sportif) et vous étudierez le rôle du focus sur la performance.
 `;
 
 <MovieProject
@@ -196,6 +202,20 @@ dirige son attention. Lors d’une tâche motrice, il est admis qu’un focus d�
   tags="Interactions, Programmation, Réalité virtuelle, Accessibilité"
   image={focus}
   description={focusdescription}
+/>
+
+import alteredavatar from "assets/alteredavatar.jpg";
+export const alteredavatardescription = `
+Vous mettrez en place une application de réalité virtuelle permettant de désynchroniser spatialement ou temporellement l'avatar de l'utilisateur immergé.
+Vous étudierez le rôle de la rotation entre l'avatar de la main de l'utilisateur et sa position physique lors d'une tâche de préhension.
+`;
+
+<MovieProject
+  title="Avatars altérés"
+  author="Institut Supérieur de Réeducation Psychomotrice"
+  tags="Interactions, Programmation, Réalité virtuelle, Accessibilité"
+  image={alteredavatar}
+  description={alteredavatardescription}
 />
 
 import foule from "assets/versailles-foule.jpg";
