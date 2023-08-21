@@ -4,21 +4,15 @@ A web site built with [Astro](https://astro.build/) & [Astroship](https://astro.
 
 ## Live Demo
 
-### [https://boisgera.github.io/itn-web/](https://boisgera.github.io/itn-web/)
+![https://boisgera.github.io/itn-web/](https://boisgera.github.io/itn-web/ITN-preview.png)
 
-## Preview
+## Pagespeed 
 
-![image](https://user-images.githubusercontent.com/1884712/200831799-10ef2456-a02e-4068-b580-4b5326f0b33b.png)
-
-### Pagespeed Score
-
-<https://pagespeed.web.dev/report?url=https://boisgera.github.io/itn-web/>
+![https://boisgera.github.io/itn-web/ITN-pagespeed.png](https://pagespeed.web.dev/report?url=https://boisgera.github.io/itn-web/)
 
 ## Installation
 
-If you are reading this on github, you can click on the "Use this template" button above to create a new repository from astroship to your account. Then you can do a `git clone` to clone it to your local system.
-
-Alternatively, you can clone the project directly from this repo to your local system.
+You can clone the project directly from this repo to your local system.
 
 ### 1. Clone the repo
 
