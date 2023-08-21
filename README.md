@@ -4,11 +4,11 @@ A web site built with [Astro](https://astro.build/) & [Astroship](https://astro.
 
 ## Live Demo
 
-![https://boisgera.github.io/itn-web/](https://boisgera.github.io/itn-web/ITN-preview.png)
+[![https://boisgera.github.io/itn-web/](https://boisgera.github.io/itn-web/ITN-preview.png)](https://boisgera.github.io/itn-web/)
 
 ## Pagespeed 
 
-![https://boisgera.github.io/itn-web/ITN-pagespeed.png](https://pagespeed.web.dev/report?url=https://boisgera.github.io/itn-web/)
+[![https://boisgera.github.io/itn-web/ITN-pagespeed.png](https://boisgera.github.io/itn-web/ITN-pagespeed.png)](https://boisgera.github.io/itn-web/ITN-pagespeed.png)
 
 ## Installation
 
