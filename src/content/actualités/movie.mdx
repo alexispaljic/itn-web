@@ -83,7 +83,7 @@ des projets 2022.
 
 Les étudiants de la session à venir choisiront un projet dans la liste suivante :
 
-import MovieProject from "@components/movie-project.astro";
+import MovieProject from "@components/new-movie-project.astro";
 
 import salleCortot from "assets/salle-cortot-nue.jpg";
 export const cortotDescription = `
@@ -97,7 +97,7 @@ export const cortotDescription = `
   author="Institut des Transformations Numériques"
   image={salleCortot}
   description={cortotDescription}
-  tags="Interactions, Réalité virtuelle"
+  tags={["Interactions", "Réalité Virtuelle"]}
 />
 
 import crossingTheLandscape from "assets/crossing-the-landscape.png";
@@ -113,7 +113,7 @@ export const danseDescription = `
   image={crossingTheLandscape}
   description={danseDescription}
   url="../../movie/par-dela-les-corps"
-  tags="Photogrammétrie, Programmation, Modélisation 3D, Innovation"
+  tags={["Photogrammétrie", "Programmation", "Modélisation 3D", "Innovation"]}
 />
 
 import draping from "assets/draping.jpg";
@@ -124,7 +124,7 @@ export const drapingDescription = `
 <MovieProject
   title="Tissus dynamiques"
   author="Céline Shen"
-  tags="Modélisation 3D, Programmation, Réalité augmentée"
+  tags={["Modélisation 3D", "Programmation", "Réalité Augmentée"]}
   image={draping}
   description={drapingDescription}
   url="https://celineshen.com/"
@@ -140,7 +140,7 @@ par exemple en situation de handicap moteur ou cognitif.
 <MovieProject
   title="Une culture accessible"
   author="Château de Versailles"
-  tags="Interactions, Accessibilité"
+  tags={["Interactions", "Accessibilité"]}
   image={wheelchair}
   description={accessibleDescription}
 />
@@ -155,7 +155,7 @@ en les animant en réalité augmentée.
 <MovieProject
   title="Animer la pierre"
   author="Château de Versailles"
-  tags="Interactions, Modélisation 3D, Réalité augmentée"
+  tags={["Interactions", "Modélisation 3D", "Réalité Augmentée"]}
   image={buste}
   description={busteDescription}
 />
@@ -171,7 +171,7 @@ lorsqu'elle sont bâchées en hiver.
 <MovieProject
   title="Voir l'invisible"
   author="Château de Versailles"
-  tags="Interactions, Modélisation 3D, Réalité augmentée"
+  tags={["Interactions", "Modélisation 3D", "Réalité Augmentée"]}
   image={statue}
   description={sculptureDescription}
 />
@@ -185,7 +185,7 @@ château de Versailles sur un écran autostéréoscopique de grande taille.
 <MovieProject
   title="Maquettes holographiques"
   author="Château de Versailles"
-  tags="Interactions, Collaboration, Modélisation 3D, Photogrammétrie"
+  tags={["Interactions", "Collaboration", "Modélisation 3D", "Photogrammétrie"]}
   image={maquette}
   description={maquetteDescription}
 />
@@ -201,21 +201,21 @@ dirige son attention. Ce focus peut être interne (mon corps) ou externe (mon en
 <MovieProject
   title="Focus d'attention"
   author="Institut Supérieur de Réeducation Psychomotrice"
-  tags="Interactions, Programmation, Réalité virtuelle, Accessibilité"
+  tags={["Interactions", "Programmation", "Réalité Virtuelle", "Accessibilité"]}
   image={focus}
   description={focusdescription}
 />
 
 import alteredavatar from "assets/alteredavatar.jpg";
 export const alteredavatardescription = `
-Vous mettrez en place une application de réalité virtuelle permettant de désynchroniser spatialement ou temporellement l'avatar de l'utilisateur immergé.
+Vous mettrez en place une application de réalité Virtuelle permettant de désynchroniser spatialement ou temporellement l'avatar de l'utilisateur immergé.
 Vous étudierez le rôle de la rotation entre l'avatar de la main de l'utilisateur et sa position physique lors d'une tâche de préhension.
 `;
 
 <MovieProject
   title="Avatars altérés"
   author="Institut Supérieur de Réeducation Psychomotrice"
-  tags="Interactions, Programmation, Réalité virtuelle, Accessibilité"
+  tags={["Interactions", "Programmation", "Réalité Virtuelle", "Accessibilité"]}
   image={alteredavatar}
   description={alteredavatardescription}
 />
@@ -230,7 +230,7 @@ travers des interactions et activités de groupe.
 <MovieProject
   title="Ensemble au château de Versailles"
   author="Château de Versailles"
-  tags="Interactions, Collaboration, Réalité virtuelle"
+  tags={["Interactions", "Collaboration", "Réalité Virtuelle"]}
   image={foule}
   description={fouleDescription}
 />
