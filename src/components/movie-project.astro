@@ -26,6 +26,15 @@ const icons = {
 //     "https://projet-ingenierie.minesparis.psl.eu/portfolio/capture-volumetrique-et-danse-collaboration-avec-lartiste-celeste-rogosin/";
 ---
 
+<style>
+  .multiline-ellipsis {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+</style>
+
 <div
   class="flex overflow-hidden mb-[32px] rounded-md border-r-[#D8DEE9] border-opacity-50 border-2 md:h-[196px]">
   <Image
@@ -58,7 +67,7 @@ const icons = {
     </div>
     <span class="text-slate-400 leading-4 mt-0 text-sm">{author}</span>
 
-    <p class="text-sm mt-[10px] mb-[10px]">
+    <p class="multiline-ellipsis not-prose text-sm mt-[10px] mb-[10px]">
       {description}
     </p>
 
