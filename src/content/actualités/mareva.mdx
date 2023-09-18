@@ -23,10 +23,14 @@ tags: [apprentissage, robotique, vision, automatique]
 
   - Info / S6, stage d'option ?
 
+
+
 ----
 
 import { Image } from "@astrojs/image/components";
+import Topic from "components/mareva-topic.astro";
 import robot from "assets/robot-crabe.jpg";
+ 
 
 <Image
   src={robot}
@@ -40,13 +44,15 @@ import robot from "assets/robot-crabe.jpg";
 ## Description
 
 L'option MAREVA du cycle ingénieur civil de Mines Paris – PSL intègre les 
-compétences de trois domaines des Mathématiques Appliquées :
+compétences de quatre domaines des Mathématiques appliquées :
 
   - Robotique, 
-  
+
+  - Automatique
+
   - Vision et
 
-  - Automatique.
+  - Apprentissage.
 
 En effet, pour développer des projets de plus en plus complexes, 
 par exemple dans des domaines multidisciplinaires tels que la robotique 
@@ -86,6 +92,8 @@ Les cours MAREVA ont pour objectif d'approfondir les domaines suivants :
 
 ## Programme 2023
 
+**TODO:** remplacer liste par un narratif (avec liens).
+
   - [Enseignements](#enseignements-mareva--semaines-1-à-3)
   - [Interlude](#interlude)
   - [Visites](#visites-mareva--semaine-4)
@@ -98,15 +106,17 @@ Les cours MAREVA ont pour objectif d'approfondir les domaines suivants :
 
 #### Du 26 septembre 2023 au 30 septembre 2023
 
-| Jour                | Sujet                                        | Intervenant             |
-| :------------------ | :------------------------------------------- | :---------------------- |
-| Lundi               | Accueil Mines Paris                          |                         |
-| Mardi               | Accueil Option MAREVA                        | Brigitte d'Andrea-Novel |
-|                     | Automatique linéaire                         | Sébastien Boisgérault   |
-| Mercredi            | Imagerie médicale: [GE Healthcare][GE] (Buc) | Beatriz Marcotegui      | 
-| Jeudi               | Réseaux de neurones                          | Bruno Figliuzzi         |
-| Vendredi            | Imagerie médicale                            | Jean-Marie Rocchisani   |
-|                     | Capteurs                                     | François Goulette       |
+| Jour                | Sujet                                        | Domaines                | Intervenant             |
+| :------------------ | :------------------------------------------- | :---------------------- | :---------------------- |
+| Lundi               | Accueil Mines Paris                          |                         |                  |
+| Mardi               | Accueil Option MAREVA                        | | Brigitte d'Andrea-Novel |
+|                     | Automatique linéaire                         | <Topic name="Automatique" /> | Sébastien Boisgérault   |
+| Mercredi            | Imagerie médicale: [GE Healthcare][GE] (Buc) | <Topic name="Vision" /> | Beatriz Marcotegui      | 
+|                     | Imagerie médicale: [GE Healthcare][GE] (Buc) | <Topic name="Vision" /> | Beatriz Marcotegui      | 
+| Jeudi               | Réseaux de neurones                          | <Topic name="Apprentissage" />  | Bruno Figliuzzi         |
+|                     | Réseaux de neurones                          | <Topic name="Apprentissage" />  | Bruno Figliuzzi         |
+| Vendredi            | Imagerie médicale                            | <Topic name="Vision" />  | Jean-Marie Rocchisani   |
+|                     | Capteurs                                     | <Topic name="Robotique" /> <Topic name="Vision" /> | François Goulette       |
 
 [GE]: https://www.gehealthcare.fr/about/ge-healthcare-offices-in-france
 
@@ -114,32 +124,32 @@ Les cours MAREVA ont pour objectif d'approfondir les domaines suivants :
 #### Du 2 octobre 2023 au 6 octobre 2023
 
 
-| Jour                | Sujet                                            | Intervenant             |
-| :------------------ | :----------------------------------------------- | :---------------------- |
-| Lundi               | Imagerie 3D                                      | François Goulette       |
-|                     | Modélisation 3D                                  | Jean-Pierre Richard     |
-| Mardi               | Robotique chirurgicale                           | François Goulette       |
-|                     | Commande linéaire                                | Sébastien Boisgérault   |
-| Mercredi            | Observateurs linéaires                           | Silvère Bonnabel        |
-|                     | Commande non-linéaire                            | Brigitte d'Andrea-Novel | 
-| Jeudi               | Commande de robots manipulateurs                 | Brigitte d'Andrea-Novel |
-|                     | Observateurs non-linéaires                       | Pauline Bernard         |
-| Vendredi            | Commande de robots mobiles                       | Brigitte d’Andrea-Novel |
-|                     | Robotique humanoïde                              | Justin Carpentier       |
+| Jour                | Sujet                                            | Domaines | Intervenant             |
+| :------------------ | :----------------------------------------------- | :------- | :---------------------- |
+| Lundi               | Imagerie 3D                                      | <Topic name="Robotique" /> <Topic name="Vision" /> | François Goulette       |
+|                     | Modélisation 3D                                  | <Topic name="Robotique" /> | Jean-Pierre Richa       |
+| Mardi               | Robotique chirurgicale                           | <Topic name="Robotique" /> | François Goulette       |
+|                     | Commande linéaire                                | <Topic name="Automatique" /> | Sébastien Boisgérault   |
+| Mercredi            | Observateurs linéaires                           | <Topic name="Automatique" /> | Silvère Bonnabel        |
+|                     | Commande non-linéaire                            | <Topic name="Automatique" /> | Brigitte d'Andrea-Novel | 
+| Jeudi               | Commande de robots manipulateurs                 | <Topic name="Automatique" /> <Topic name="Robotique" /> | Brigitte d'Andrea-Novel |
+|                     | Observateurs non-linéaires                       | <Topic name="Automatique" /> | Pauline Bernard         |
+| Vendredi            | Commande de robots mobiles                       | <Topic name="Automatique" /> <Topic name="Robotique" /> | Brigitte d’Andrea-Novel |
+|                     | Robotique humanoïde                              | <Topic name="Robotique" /> | Justin Carpentier       |
 
 #### Du 9 octobre 2023 au 12 octobre 2023
 
-| Jour                | Sujet                                                         | Intervenant             |
-| :------------------ | :------------------------------------------------------------ | :---------------------- |
-| Lundi               | Systèmes à évènements discrets 1/6                            | Stéphane Gaubert        |
-|                     | Présentation stages 2A                                        | --                      |
-| Mardi               | Systèmes à évènements discrets 2/6                            | Stéphane Gaubert        |
-|                     | Présentation stages 2A                                        | --                      |
-| Mercredi            | Modèles génératifs                                            | Santiago Velasco        |
-|                     | Segmentation sémantique avec U-Net                            | Beatriz Marcotegui      |
-| Jeudi               | Analyse de nuage de points 3D                                 | Beatriz Marcotegui      |
-|                     | Imagerie médicale                                             | Beatriz Marcotegui                  |
-| Vendredi            | Apprentissage par renforcement en Robotique                   | Stéphane Caron          |
+| Jour                | Sujet                                                         | Domaines | Intervenant             |
+| :------------------ | :------------------------------------------------------------ | :------- | :---------------------- |
+| Lundi               | Systèmes à évènements discrets 1/6                            | <Topic name="Automatique" /> | Stéphane Gaubert        |
+|                     | Présentation stages 2A                                        | |                         |
+| Mardi               | Systèmes à évènements discrets 2/6                            | <Topic name="Automatique" /> | Stéphane Gaubert        |
+|                     | Présentation stages 2A                                        | |                       |
+| Mercredi            | Modèles génératifs                                            | <Topic name="Apprentissage" />| Santiago Velasco        |
+|                     | Segmentation sémantique avec U-Net                            | <Topic name="Vision" /> <Topic name="Apprentissage" />| Beatriz Marcotegui      |
+| Jeudi               | Analyse de nuage de points 3D                                 | <Topic name="Vision" /> | Beatriz Marcotegui      |
+|                     | Imagerie médicale                                             | <Topic name="Vision" /> | Beatriz Marcotegui                  |
+| Vendredi            | Apprentissage par renforcement en Robotique                   | <Topic name="Robotique" /> <Topic name="Apprentissage" /> | Stéphane Caron          |
 |                     | Visites MAREVA (préparation)                                 |                         |
 
 ## Interlude 
@@ -148,13 +158,13 @@ Les cours MAREVA ont pour objectif d'approfondir les domaines suivants :
 
 Trois lundis sur la période novembre & décembre sont consacrés à l'option :
 
-| Jour                          | Sujet                               | Intervenant             |
-| :---------------------------- | :---------------------------------- | :---------------------- |
-| Lundi 6 nov. 2023 matin       | Systèmes à évènements discrets 4/6  | Stéphane Gaubert        |
+| Jour                          | Sujet                               | Domaines | Intervenant             |
+| :---------------------------- | :---------------------------------- | :------- | :---------------------- |
+| Lundi 6 nov. 2023 matin       | Systèmes à évènements discrets 4/6  | <Topic name="Automatique" /> | Stéphane Gaubert        |
 | Lundi 13 nov. 2023 matin      | Recherche de stages                 |                         |
-| Lundi 13 nov. 2023 après-midi | Systèmes à évènements discrets 5/6  | Stéphane Gaubert        |
+| Lundi 13 nov. 2023 après-midi | Systèmes à évènements discrets 5/6  | <Topic name="Automatique" /> | Stéphane Gaubert        |
 | Lundi 18 déc. 2023 matin      | Recherche de stages                 |                         |
-| Lundi 18 déc. 2023 après-midi | Systèmes à évènements discrets 6/6  | Stéphane Gaubert        |
+| Lundi 18 déc. 2023 après-midi | Systèmes à évènements discrets 6/6  | <Topic name="Automatique" /> | Stéphane Gaubert        |
 
 
 ### Visites MAREVA -- Semaine 4
