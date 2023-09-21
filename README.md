@@ -12,13 +12,11 @@ A web site built with [Astro](https://astro.build/) & [Astroship](https://astro.
 
 ## Installation
 
-You can work on the project in the cloud or locally.
+You can work on the project in the cloud (preferred method) or locally.
 
 ### 1. Clone the repository
 
-To work in the cloud, [create a new Codespace](https://codespaces.new/boisgera/itn-web).
-
-Alternatively, to work locally, clone the repo:
+To work in the cloud, [create a new Codespace](https://codespaces.new/boisgera/itn-web). Alternatively, to work locally, clone the repo:
 
 ```bash
 git clone git@github.com:boisgera/itn-web.git
