@@ -2,10 +2,7 @@
 
 A web site built with [Astro](https://astro.build/) & [Astroship](https://astro.build/themes/details/astroship/).
 
-This repository is the antechamber of https://itn.dev/ ; the actual site is hosted at
-
-https://github.com/ITN-Mines-Paris/ITN-Mines-Paris.github.io
-
+This repository is the antechamber of https://itn.dev/ ; the actual site is hosted at https://github.com/ITN-Mines-Paris/ITN-Mines-Paris.github.io
 which is synchronized manually with this repository.
 
 ## Live Demo
