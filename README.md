@@ -20,7 +20,7 @@ To work locally, you need to install:
 
   - [Git](https://git-scm.com/),
 
-  - [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/)  ; 
+  - [Node.js](https://nodejs.org/en/) ; 
     we suggest that you use the latest LTS version,
 
 ### 1. Clone the repository
@@ -33,16 +33,14 @@ git clone git@github.com:boisgera/itn-web.git
 
 ### 2. Install Dependencies
 
-Codespace will automatically install your dependencies.
-
-If you work locally, type:
+Codespace should automatically install your dependencies. If you work locally, type:
 
 ```bash
 npm install
 ```
 
 
-### 3. Start development Server
+### 3. Start a Web Server
 
 The command
 
@@ -50,20 +48,19 @@ The command
 npm run dev
 ```
 
-starts a development server and opens a browser window. Each time you save a file, the browser will reload the site so that you can immediately see the effect of your changes.
+starts a Web development server. In Codespaces it will also prompt you to open a browser window (locally, you are on your own). In both cases, each time you save a file, the browser will reload the site so that you can immediately see the effect of your changes.
 
 You are now ready to start working on the project.
 
 ### 4. Development cycle
 
-  - Synchronize: download the most recent version of the project files 
+  - Synchronize: download the most recent version of the project files   
     (`git pull` locally), 
 
-  - Edit the files as you see fit, then commit 
-    your changes when you are satisfied with them
+  - Edit the files, then commit your changes  
     (`git add` + `git commit` locally),
   
-  - Synchronize: upload these changes to the project repository 
+  - Synchronize: upload these changes to the project repository   
     (`git push` locally).
 
 
