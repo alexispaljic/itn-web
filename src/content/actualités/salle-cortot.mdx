@@ -10,7 +10,97 @@ author: "Brigitte d'Andréa-Novel"
 tags: [musique, création, métavers, inauguration]
 ---
 
-🚧 **Work in progress** 🚧
+
+import { Image } from "@astrojs/image/components";
+import salleCortot from "assets/salle-cortot.jpg";
+
+<Image
+  src={salleCortot}
+  alt="Salle Cortot"
+  width="768"
+  loading="eager"
+  format="avif"
+/>
+
+
+--------------------------------------------------------------------------------
+Le Festival Musique aux MINES est heureux de vous annoncer 
+pour sa 8ème édition le concert
+
+import Hero from "/src/components/cortot/hero.astro";
+
+
+<Hero />
+
+
+
+### Programme Musical
+
+    - Frédéric Chopin : Concerto No. 1 en Mi Mineur pour piano et orchestre (1830)
+
+    - Pierre Wissmer : 3ème symphonie pour orchestre à cordes (1955)
+
+La pianiste soliste sera Yuki Kinouchi, Artist Diploma 2023 de l’École normale 
+de musique de Paris. 
+
+import YK from "assets/cortot/Yuki Kinouchi.jpeg";
+
+<Image
+  src={YK}
+  alt="Yoki Kinouchi"
+  width="768"
+  format="avif"
+/>
+
+
+L’Orchestre de Chambre Quartier Latin (OCQL) sera placé sous la direction 
+de Marc-Antoine Novel.
+
+
+import OCQL from "assets/cortot/OCQL2.jpg";
+
+<Image
+  src={OCQL}
+  alt="OCQL"
+  width="768"
+  format="avif"
+/>
+
+Ce concert constitue la soirée/événement de lancement de l’Institut des 
+Transformations Numériques de Mines Paris – PSL, 
+dont l’un des axes de développement, 
+à côté de l’ingénierie numérique et de la santé, 
+est celui des Industries Culturelles et Créatives 
+que nous voulons mettre à l’honneur lors de cette soirée, 
+en faisant vivre au public en salle et à distance, 
+une expérience immersive unique autour de l’art, de la musique et du métavers. 
+ 
+En collaboration avec la société Aika, pionnière dans l’art et les technologies 
+immersives, et SNCF Réseaux, et grâce à des outils d’interaction développés 
+pour l’occasion par des élèves ingénieurs de Mines Paris, une œuvre digitale 
+exploitant la synesthésie (couleurs/sons) dans un espace métavers autour d’un 
+extrait de la symphonie de P. Wissmer sera réalisée par les artistes chinois 
+Yang Jiechang et An Xiaotong en collaboration avec la curatrice et commissaire d’exposition 
+Martina Koeppel-Yang. 
+
+Cette promenade artistique sera diffusée en salle et 
+sur la plateforme immersive où le concert sera également retransmis en live. 
+Lors de l’exécution de la symphonie de P. Wissmer, le public en salle pourra 
+visualiser sur la scène des vidéos générées par des Intelligences Artificielles 
+en lien avec la narrativité musicale, sur des écrans de côté les avatars en 
+temps réel et participer à une expérience collaborative avec les musiciens 
+et le public à distance.
+
+
+
+avec le soutien de 
+l’École Normale de Musique de Paris, la fondation Mines Paris, l’Institut des Transformations Numériques de Mines Paris - PSL, GSE, la Caisse des Dépôts et Consignations, les champagnes Ruinart, CRESCENDO-APJM,  ArtenetrA, 
+l’Action Musicale Pierre Wissmer, l’Association Métavers Arts & Culture 
+ en collaboration avec la société AIKA, SNCF Réseaux et UCANS.
+
+
+--------------------------------------------------------------------------------
+
 
 A l'occasion de son lancement, l'Institut des Transformations Numériques (ITN)
 propose une création immersive originale à partir d'un concert Chopin & Wissmer.
@@ -21,16 +111,6 @@ Cet évènement est organisé avec
 le soutien de l’École Normale de Musique de Paris, la fondation Mines Paris, l’Institut des Transformations Numériques de Mines Paris - PSL, CRESCENDO-APJM, l’Ircam, ArtenetrA, l’Action Musicale Pierre Wissmer,
 l’Association Métavers Arts & Culture.
 
-import { Image } from "@astrojs/image/components";
-import salleCortot from "assets/salle-cortot.jpg";
-
-<Image
-  src={salleCortot}
-  alt="Le casque de Réalité Virtuelle Oculus"
-  width="768"
-  loading="eager"
-  format="avif"
-/>
 
 ### Projet
 
