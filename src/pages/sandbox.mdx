@@ -1,0 +1,58 @@
+import { Image } from "@astrojs/image/components";
+import Brigitte from "assets/portraits/brigitte-dandrea-novel.jpg";
+import Chloé from "assets/portraits/chloé-agathe-azencott.jpg";
+import Philippe from "assets/portraits/philippe-kalousdian.jpg";
+
+
+<html>
+  <meta>
+    <style>
+      font-size: 18px;
+    </style>
+  </meta>
+  <body>
+    <div class="max-w-3xl my-12 m-auto flex flex-col gap-12">
+      <div class="flex gap-6">
+        <Image
+          src={Brigitte}
+          alt="Brigitte d'Andrea-Novel"
+          width="168"
+          height="168"
+          loading="eager"
+          format="avif"
+          class="rounded inline-block"
+        />
+        <div>
+          <div class="font-semibold text-2xl text-slate-900">
+            Brigitte d'Andréa-Novel
+          </div>
+          <div class="font-normal text-lg text-slate-500">
+            Directrice de l'ITN, Professeure Mines Paris – PSL
+          </div>
+        </div>
+      </div>
+      <div>
+        <Image
+          src={Chloé}
+          alt="Chloé-Agathe Azencott"
+          width="168"
+          height="168"
+          loading="eager"
+          format="avif"
+          class="rounded"
+        />
+      </div>
+      <div>
+        <Image
+          src={Philippe}
+          alt="Philippe Kalousdian"
+          width="168"
+          height="168"
+          loading="eager"
+          format="avif"
+          class="rounded"
+        />
+      </div>
+    </div>
+  </body>
+</html>
