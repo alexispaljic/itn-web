@@ -1,4 +1,6 @@
 import { Image } from "@astrojs/image/components";
+import { Icon } from "astro-icon";
+
 import Brigitte from "assets/portraits/brigitte-dandrea-novel.jpg";
 import Chloé from "assets/portraits/chloé-agathe-azencott.jpg";
 import Philippe from "assets/portraits/philippe-kalousdian.jpg";
@@ -26,8 +28,31 @@ import Philippe from "assets/portraits/philippe-kalousdian.jpg";
           <div class="font-semibold text-2xl text-slate-900">
             Brigitte d'Andréa-Novel
           </div>
-          <div class="font-normal text-lg text-slate-500">
-            Directrice de l'ITN, Professeure Mines Paris – PSL
+          <div class="font-normal text-lg text-slate-500 mb-2">
+            Directrice de l'ITN, Professeur
+          </div>
+          <div >
+            <span class="mr-4 text-sky-950 bg-sky-100 p-1 rounded relative">
+              <Icon
+                class="w-4 h-4 mr-1 inline text-sky-600 relative -top-[1px]"
+                name="abacus"
+              />
+                <span>Automatique</span>
+            </span>
+            <span class="mr-4 text-sky-950 bg-sky-100 p-1 rounded relative">
+              <Icon
+                class="w-4 h-4 mr-1 inline text-sky-600 relative -top-[1px]"
+                name="abacus"
+              />
+                <span>Robotique</span>
+            </span>
+            <span class="text-purple-950 bg-purple-100 p-1 rounded relative">
+              <Icon
+                class="w-4 h-4 mr-1 inline text-purple-600 relative -top-[1px]"
+                name="tabler:palette"
+              />
+                <span>Musique</span>
+            </span>
           </div>
         </div>
       </div>
