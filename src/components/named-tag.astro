@@ -1,0 +1,37 @@
+---
+import { Icon } from "astro-icon";
+
+const { type } = Astro.props;
+
+const style = {
+  "Ingénierie Numérique": {
+    iconName: "abacus",
+    iconColor: "text-sky-600",
+    backgroundColor: "bg-sky-100",
+    textColor: "text-sky-900",
+  },
+  "Industries Créatives": {
+    iconName: "tabler:palette",
+    iconColor: "text-purple-600",
+    backgroundColor: "bg-purple-100",
+    textColor: "text-purple-900",
+  },
+  "Santé Numérique": {
+    iconName: "tabler:",
+    iconColor: "text-red-600",
+    backgroundColor: "bg-red-100",
+    textColor: "text-red-900",
+  }
+}[type]
+
+---
+
+<span class={`px-1 rounded relative ${style.backgroundColor} ${style.iconColor}`}>
+  <Icon
+    class={`w-4 h-4 inline relative -top-[1px]`}
+    name={style.iconName}
+  />
+    <span class={`${style.textColor}`}>
+      <slot />
+    </span>
+</span>

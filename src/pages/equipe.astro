@@ -1,0 +1,27 @@
+---
+import Layout from "@layouts/NewLayout.astro";
+import Portrait from "@components/portrait.astro";
+
+const data = [
+  {
+    "name": "Brigitte d'Andréa-Novel",
+    "role": "Directrice de l'ITN, Professeur",
+    "email": "brigitte.dandrea-novel@minesparis.psl.eu",
+    "image": "brigitte-dandrea-novel.jpg",
+    "skills": {
+      "Ingénierie Numérique": ["Automatique", "Robotique"],
+      "Industries Créatives": ["Musique"],
+      "Santé Numérique": [],
+    }
+  }
+]
+
+---
+
+<Layout
+  title="Equipe"
+  description="Découvrez les acteurs de l'ITN">
+  <div class="max-w-3xl my-12 m-auto flex flex-col gap-12">
+    {data.map((datum) => <Portrait attrs={datum} />)}
+  </div>
+</Layout>
