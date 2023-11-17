@@ -21,7 +21,6 @@ const map = {
 function noAccent(text) {
 	const pattern = /[àáäâèéêëçìíîïòóôõöøùúûüÿñ]/gi; 
 	const output = text.replace(pattern, (match) => map[match.toLowerCase()]).toLowerCase();
-  console.log(output);
   return output;
 }
 
