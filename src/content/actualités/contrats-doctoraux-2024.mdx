@@ -3,7 +3,7 @@ draft: false
 title: "Contrats Doctoraux 2024"
 description: "Attribution des contrats doctoraux 2024 de l'ITN"
 image: "https://unsplash.com/photos/ZPeXrWxOjRQ/download?ixid=M3wxMjA3fDB8MXxhbGx8MjMwfHx8fHx8Mnx8MTcwNzE0NzM0OXw&force=true&w=430"
-date: "2024-02-05 16:30"
+date: "2024-02-15 10:00"
 category: "Recherche"
 author: "Brigitte d'Andrea-Novel"
 tags: [recherche, doctorat, financement]
@@ -11,6 +11,8 @@ tags: [recherche, doctorat, financement]
 
 import { Icon } from "astro-icon";
 import { Image } from "@astrojs/image/components";
+import { Picture } from "@astrojs/image/components";
+
 import Topic from "components/itn-topic.astro";
 import ListItem from "components/itn-list-item.astro";
 import doctorat from "assets/contrats-doctoraux-2024.jpg";
@@ -23,17 +25,16 @@ import doctorat from "assets/contrats-doctoraux-2024.jpg";
   format="avif"
 />
 
-# Appel à projets
+## Introduction
 
-## Principes généraux
+[L'Institut des Transformations Numériques][ITN] (ITN) est la structure 
+fédérant les activités de Mines Paris – PSL
+dans le domaine des sciences et technologies du numérique,
+conformément au contrat d'objectifs et de performance
+de l'établissement.
 
-[L'Institut des Transformations Numériques][ITN] de Mines Paris – PSL est un 
-institut transversal fédérant les activités des centres de recherche de l'école 
-sur les sciences et technologies du numérique. 
-
-L'ensemble des expertises et des compétences mutualisées permet d'envisager des 
-projets d'envergure, déclinés à ce stade de développement autour de 3 axes 
-thématiques privilégiés :
+Ses compétences mutualisées permettent d'envisager des projets d'envergure. 
+Trois thématiques sont privilégiées pour le moment :
 
 <ul style="list-style-type: none;">
   <ListItem name="Ingénierie Numérique"> Ingénierie Numérique, </ListItem>
@@ -43,17 +44,33 @@ thématiques privilégiés :
 
 [ITN]: https://itn.dev
 
+import proceduralCity from "assets/procedural-city.png";
 
-La création de l'ITN s'inscrit dans le COP de l'école et dans ce cadre, 
-cinq contrats doctoraux ont été attribués en vue d'un recrutement à l'automne 2024. 
-Ces contrats soutiendront des projets de recherche en lien avec les thématiques 
-scientifiques prioritaires de l'institut et qui contribueront au développement de codes valorisables ou renforçant les communs numériques.
+<Image
+  src={proceduralCity}
+  alt="Un robot crabe"
+  width="768"
+  loading="eager"
+  format="avif"
+/>
 
-Le projet sera encadré par un ou plusieurs enseignants-chercheurs ou chercheurs 
-des centres de l'école. 
-En fonction des besoins du sujet, un co-encadrement par un chercheur 
-d'un centre extérieur à l'école peut aussi être envisagé. 
-L'ITN privilégiera les projets faisant collaborer plusieurs centres de l'école.  
+## Appel à projets
+
+L'ITN attribuera cinq contrats doctoraux en 2024 dans le cadre d'un appel à projet.
+
+  - Ces doctorats seront encadrés par des membres des centres de recherche 
+Mines Paris – PSL ; les projets impliquant plusieurs centres seront privilégiés.
+La participation de chercheurs d'autres établissements est possible.
+
+  - Ces projets devront contribuer activement à la stratégie de valorisation des 
+travaux de recherche de l'ITN, qui concerne en particulier le code logiciel, 
+les données de la recherche et les communications scientifiques du projet.
+
+  - L'ITN et la bibliothèque de Mines Paris – PSL accompagneront les doctorants 
+dans cette démarche avec des formations dédiées aux principes, bonnes pratiques 
+et outils de la recherche dans le domaine des sciences et technologies 
+du numérique (communs numériques, science ouverte, données de la
+recherche, etc.).
 
 ## Calendrier
 
@@ -70,13 +87,14 @@ L'ITN privilégiera les projets faisant collaborer plusieurs centres de l'école
 
 ## Procédure détaillée
 
-La commission de sélection des projets sera présidée par la directrice de l'ITN
-et composée des membres du comité de pilotage de l'ITN ainsi que des membres des 
-5 écoles doctorales de l'école.
+La commission de sélection des projets sera composée de membres du comité de 
+pilotage de l'ITN ainsi que des écoles doctorales de Mines Paris – PSL.
+Elle sera présidée par Brigitte d'Andréa-Novel, directrice de l'ITN
+(brigitte.dandrea-novel@minesparis.psl.eu.).
 
-Pour tout renseignement relatif au processus de soumission, 
-écrire à la directrice de l'ITN : brigitte.dandrea-novel@minesparis.psl.eu
-
+Les manifestations d'intérêt, dossiers de candidatures ainsi que toute 
+demande relative au processus de soumission devront être adressés 
+par e-mail à la directrice de l'ITN.
 
 
 ### Manifestation d'intérêt
@@ -84,20 +102,23 @@ Pour tout renseignement relatif au processus de soumission,
 
 ![Manifestation d'intérêt](https://unsplash.com/photos/ckVjMurwKIs/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Mnx8aGFuZCUyMHJhaXNlZHxlbnwwfDB8fHwxNzA3MTUzOTA3fDA&force=true&w=1920)
 
-Un document de 3 pages maximum décrivant :
+Elle prendra la forme d'un document de 3 pages maximum (hors annexe) décrivant :
 
   - le titre et le sujet de la thèse, 
   
-  - le nom du laboratoire & de l'équipe d'accueil.
+  - le nom du laboratoire et de l'équipe d'accueil.
   
-  - la liste du directeur de thèse et des co-encadrants, 
-    ainsi que des liens vers un curriculum vitae de chacun d'eux,
+  - la liste du directeur de thèse et des co-encadrants,
   
   - la pertinence du projet par rapport aux missions & thématiques de l'ITN,
   
   - le profil du candidat recherché. 
-  
-Ces manifestations d'intérêt seront envoyées à itn@minesparis.psl.eu 
+
+On joindra en en annexe (ou sous forme de liens Internet) :
+
+  - les curriculum vitae du directeur de thèse et des co-encadrants.
+
+
 
 
 ### Dossier de candidature
@@ -106,20 +127,22 @@ Ces manifestations d'intérêt seront envoyées à itn@minesparis.psl.eu
 
 Il comportera :
 
-  - un CV détaillé du candidat
+  - un CV détaillé du candidat,
 
-  - une lettre de motivation
+  - une lettre de motivation,
     
   - un relevé de notes de la formations antérieure ouvrant droit à l'inscription 
-    en doctorat 
+    en doctorat, 
     
   - un avis du responsable de cette formation permettant de situer le candidat 
-    dans sa promotion et si possible un avis personnalisé d'un responsable 
-    académique ayant suivi un travail de recherche mené par le candidat 
-    (stage de M2, projet, séminaire, etc.) 
+    dans sa promotion 
     
-  - des lettres de recommandation circonstanciées sur l'adéquation entre projet 
-    et candidat pourront être jointes. 
+et si possible :
+
+  - l'avis d'un responsable académique ayant suivi un travail de recherche mené 
+    par le candidat (stage de M2, projet, séminaire, etc.), 
+    
+  - des lettres de recommandation sur l'adéquation entre projet et candidat. 
 
 
 
@@ -127,28 +150,14 @@ Il comportera :
 
 ![Audition](https://unsplash.com/photos/LETdkk7wHQk/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTJ8fHBlcnNvbiUyMHNwZWFraW5nfGVufDB8MHx8fDE3MDcxNTQyNjJ8MA&force=true&w=1920)
 
-Les candidats sélectionnés seront auditionnés par la commission selon le format : 
+Les candidats sélectionnés seront auditionnés par la commission selon le format suivant : 
 
-  - présentation orale de 10 min concernant le cursus du candidat, 
-    le travail de recherche M2 (ou équivalent) et le projet doctoral. 
+  - Présentation orale de 10 min du candidat ou de la candidate présentant son 
+    cursus, son travail de recherche M2 (ou équivalent) et le projet doctoral. 
 
-  - échange de 10 min avec la commission. 
+  - Echange de 10 min avec la commission.
 
-#### Critères d'évaluation des dossiers et des auditions
-
-    - l'aptitude du candidat à la recherche 
-
-    - l'adéquation du profil du candidat au projet doctoral
-
-    - la qualité du parcours académique 
-
-    - la pertinence du projet par rapport aux thématiques de recherche de l'ITN 
-
-    - la clarté des objectifs scientifiques de la thèse 
-
-    - la contribution à la visibilité et à la valorisation des recherches menées au sein de l'ITN
-
-
+<div style="margin-bottom:3em;"></div>
 
 
 
